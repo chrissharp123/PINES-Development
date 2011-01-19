@@ -1,3 +1,11 @@
+GPLS/PINES Development
+
+This repository houses the PINES-specific version of Evergreen 1.6.1.4.
+It includes all of PINES customizations, which will be enumerated in a separate 
+README document.
+
+========================================================
+
 README for Evergreen 1.6.1.4
 
 Installing prerequisites:
