@@ -1,0 +1,478 @@
+oils_rstore_la-oils_cstore.lo: oils_cstore.c /usr/include/ctype.h \
+  /usr/include/features.h /usr/include/sys/cdefs.h \
+  /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+  /usr/include/gnu/stubs-32.h /usr/include/bits/types.h \
+  /usr/include/bits/typesizes.h /usr/include/endian.h \
+  /usr/include/bits/endian.h /openils/include/opensrf/osrf_application.h \
+  /openils/include/opensrf/utils.h /usr/include/stdio.h \
+  /usr/lib/gcc/i486-linux-gnu/4.3.2/include/stddef.h /usr/include/libio.h \
+  /usr/include/_G_config.h /usr/include/wchar.h \
+  /usr/lib/gcc/i486-linux-gnu/4.3.2/include/stdarg.h \
+  /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+  /usr/include/bits/stdio.h /usr/include/fcntl.h \
+  /usr/include/bits/fcntl.h /usr/include/sys/types.h /usr/include/time.h \
+  /usr/include/sys/select.h /usr/include/bits/select.h \
+  /usr/include/bits/sigset.h /usr/include/bits/time.h \
+  /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
+  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
+  /usr/include/bits/confname.h /usr/include/getopt.h \
+  /usr/include/sys/time.h /usr/include/sys/stat.h \
+  /usr/include/bits/stat.h /usr/include/stdlib.h /usr/include/alloca.h \
+  /usr/include/string.h /usr/include/bits/string.h \
+  /usr/include/bits/string2.h /openils/include/opensrf/md5.h \
+  /openils/include/opensrf/log.h /usr/include/syslog.h \
+  /usr/include/sys/syslog.h /usr/include/bits/syslog-path.h \
+  /usr/include/errno.h /usr/include/bits/errno.h \
+  /usr/include/linux/errno.h /usr/include/asm/errno.h \
+  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+  /openils/include/opensrf/osrf_app_session.h \
+  /openils/include/opensrf/transport_client.h \
+  /openils/include/opensrf/transport_session.h \
+  /openils/include/opensrf/transport_message.h \
+  /usr/include/libxml2/libxml/globals.h \
+  /usr/include/libxml2/libxml/xmlversion.h \
+  /usr/include/libxml2/libxml/xmlexports.h \
+  /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/tree.h \
+  /usr/include/libxml2/libxml/xmlstring.h \
+  /usr/include/libxml2/libxml/xmlregexp.h \
+  /usr/include/libxml2/libxml/dict.h /usr/include/libxml2/libxml/hash.h \
+  /usr/include/libxml2/libxml/valid.h \
+  /usr/include/libxml2/libxml/xmlerror.h \
+  /usr/include/libxml2/libxml/list.h \
+  /usr/include/libxml2/libxml/xmlautomata.h \
+  /usr/include/libxml2/libxml/entities.h \
+  /usr/include/libxml2/libxml/encoding.h /usr/include/iconv.h \
+  /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+  /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+  /usr/include/libxml2/libxml/xmlmemory.h \
+  /usr/include/libxml2/libxml/threads.h \
+  /usr/include/libxml2/libxml/debugXML.h \
+  /usr/include/libxml2/libxml/xpath.h \
+  /openils/include/opensrf/xml_utils.h \
+  /openils/include/opensrf/osrf_json.h \
+  /openils/include/opensrf/osrf_list.h \
+  /openils/include/opensrf/osrf_hash.h \
+  /openils/include/opensrf/string_array.h \
+  /openils/include/opensrf/socket_bundle.h /usr/include/sys/socket.h \
+  /usr/include/sys/uio.h /usr/include/bits/uio.h \
+  /usr/include/bits/socket.h \
+  /usr/lib/gcc/i486-linux-gnu/4.3.2/include-fixed/limits.h \
+  /usr/lib/gcc/i486-linux-gnu/4.3.2/include-fixed/syslimits.h \
+  /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+  /usr/include/bits/posix2_lim.h /usr/include/bits/sockaddr.h \
+  /usr/include/asm/socket.h /usr/include/asm/sockios.h \
+  /usr/include/arpa/inet.h /usr/include/netinet/in.h \
+  /usr/include/stdint.h /usr/include/bits/wchar.h /usr/include/bits/in.h \
+  /usr/include/bits/byteswap.h /usr/include/netdb.h \
+  /usr/include/rpc/netdb.h /usr/include/bits/netdb.h \
+  /usr/include/netinet/tcp.h /usr/include/sys/un.h /usr/include/signal.h \
+  /usr/include/bits/signum.h /usr/include/bits/siginfo.h \
+  /usr/include/bits/sigaction.h /usr/include/bits/sigcontext.h \
+  /usr/include/bits/sigstack.h /usr/include/bits/sigthread.h \
+  /openils/include/opensrf/sha.h \
+  /usr/include/libxml2/libxml/parserInternals.h \
+  /usr/include/libxml2/libxml/HTMLparser.h \
+  /usr/include/libxml2/libxml/chvalid.h \
+  /openils/include/opensrf/osrf_message.h \
+  /openils/include/opensrf/osrf_system.h \
+  /openils/include/opensrf/osrf_settings.h \
+  /openils/include/opensrf/osrfConfig.h \
+  /openils/include/opensrf/osrf_cache.h \
+  /usr/local/include/libmemcached/memcached.h /usr/include/inttypes.h \
+  /usr/lib/gcc/i486-linux-gnu/4.3.2/include/stdbool.h \
+  /usr/local/include/libmemcached/visibility.h \
+  /usr/local/include/libmemcached/configure.h \
+  /usr/local/include/libmemcached/constants.h \
+  /usr/local/include/libmemcached/types.h \
+  /usr/local/include/libmemcached/string.h \
+  /usr/local/include/libmemcached/stats.h \
+  /usr/local/include/libhashkit/hashkit.h \
+  /usr/local/include/libhashkit/visibility.h \
+  /usr/local/include/libhashkit/configure.h \
+  /usr/local/include/libhashkit/types.h \
+  /usr/local/include/libhashkit/algorithm.h \
+  /usr/local/include/libhashkit/behavior.h \
+  /usr/local/include/libhashkit/digest.h \
+  /usr/local/include/libhashkit/function.h \
+  /usr/local/include/libhashkit/strerror.h \
+  /usr/local/include/libmemcached/allocators.h \
+  /usr/local/include/libmemcached/analyze.h \
+  /usr/local/include/libmemcached/auto.h \
+  /usr/local/include/libmemcached/behavior.h \
+  /usr/local/include/libmemcached/callback.h \
+  /usr/local/include/libmemcached/delete.h \
+  /usr/local/include/libmemcached/dump.h \
+  /usr/local/include/libmemcached/fetch.h \
+  /usr/local/include/libmemcached/flush.h \
+  /usr/local/include/libmemcached/flush_buffers.h \
+  /usr/local/include/libmemcached/get.h \
+  /usr/local/include/libmemcached/hash.h \
+  /usr/local/include/libmemcached/parse.h \
+  /usr/local/include/libmemcached/quit.h \
+  /usr/local/include/libmemcached/result.h \
+  /usr/local/include/libmemcached/server.h \
+  /usr/local/include/libmemcached/server_list.h \
+  /usr/local/include/libmemcached/storage.h \
+  /usr/local/include/libmemcached/strerror.h \
+  /usr/local/include/libmemcached/verbosity.h \
+  /usr/local/include/libmemcached/version.h \
+  /usr/local/include/libmemcached/sasl.h /usr/include/dlfcn.h \
+  /usr/include/bits/dlfcn.h ../../include/openils/oils_utils.h \
+  ../../include/openils/idl_fieldmapper.h \
+  ../../include/openils/oils_idl.h ../../include/openils/oils_event.h \
+  ../../include/openils/oils_constants.h /usr/local/include/dbi/dbi.h
+
+/usr/include/ctype.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-32.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/openils/include/opensrf/osrf_application.h:
+
+/openils/include/opensrf/utils.h:
+
+/usr/include/stdio.h:
+
+/usr/lib/gcc/i486-linux-gnu/4.3.2/include/stddef.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/lib/gcc/i486-linux-gnu/4.3.2/include/stdarg.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+/usr/include/fcntl.h:
+
+/usr/include/bits/fcntl.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/time.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/unistd.h:
+
+/usr/include/bits/posix_opt.h:
+
+/usr/include/bits/confname.h:
+
+/usr/include/getopt.h:
+
+/usr/include/sys/time.h:
+
+/usr/include/sys/stat.h:
+
+/usr/include/bits/stat.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/alloca.h:
+
+/usr/include/string.h:
+
+/usr/include/bits/string.h:
+
+/usr/include/bits/string2.h:
+
+/openils/include/opensrf/md5.h:
+
+/openils/include/opensrf/log.h:
+
+/usr/include/syslog.h:
+
+/usr/include/sys/syslog.h:
+
+/usr/include/bits/syslog-path.h:
+
+/usr/include/errno.h:
+
+/usr/include/bits/errno.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/asm/errno.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/openils/include/opensrf/osrf_app_session.h:
+
+/openils/include/opensrf/transport_client.h:
+
+/openils/include/opensrf/transport_session.h:
+
+/openils/include/opensrf/transport_message.h:
+
+/usr/include/libxml2/libxml/globals.h:
+
+/usr/include/libxml2/libxml/xmlversion.h:
+
+/usr/include/libxml2/libxml/xmlexports.h:
+
+/usr/include/libxml2/libxml/parser.h:
+
+/usr/include/libxml2/libxml/tree.h:
+
+/usr/include/libxml2/libxml/xmlstring.h:
+
+/usr/include/libxml2/libxml/xmlregexp.h:
+
+/usr/include/libxml2/libxml/dict.h:
+
+/usr/include/libxml2/libxml/hash.h:
+
+/usr/include/libxml2/libxml/valid.h:
+
+/usr/include/libxml2/libxml/xmlerror.h:
+
+/usr/include/libxml2/libxml/list.h:
+
+/usr/include/libxml2/libxml/xmlautomata.h:
+
+/usr/include/libxml2/libxml/entities.h:
+
+/usr/include/libxml2/libxml/encoding.h:
+
+/usr/include/iconv.h:
+
+/usr/include/libxml2/libxml/xmlIO.h:
+
+/usr/include/libxml2/libxml/SAX.h:
+
+/usr/include/libxml2/libxml/xlink.h:
+
+/usr/include/libxml2/libxml/SAX2.h:
+
+/usr/include/libxml2/libxml/xmlmemory.h:
+
+/usr/include/libxml2/libxml/threads.h:
+
+/usr/include/libxml2/libxml/debugXML.h:
+
+/usr/include/libxml2/libxml/xpath.h:
+
+/openils/include/opensrf/xml_utils.h:
+
+/openils/include/opensrf/osrf_json.h:
+
+/openils/include/opensrf/osrf_list.h:
+
+/openils/include/opensrf/osrf_hash.h:
+
+/openils/include/opensrf/string_array.h:
+
+/openils/include/opensrf/socket_bundle.h:
+
+/usr/include/sys/socket.h:
+
+/usr/include/sys/uio.h:
+
+/usr/include/bits/uio.h:
+
+/usr/include/bits/socket.h:
+
+/usr/lib/gcc/i486-linux-gnu/4.3.2/include-fixed/limits.h:
+
+/usr/lib/gcc/i486-linux-gnu/4.3.2/include-fixed/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/bits/sockaddr.h:
+
+/usr/include/asm/socket.h:
+
+/usr/include/asm/sockios.h:
+
+/usr/include/arpa/inet.h:
+
+/usr/include/netinet/in.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/bits/in.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/netdb.h:
+
+/usr/include/rpc/netdb.h:
+
+/usr/include/bits/netdb.h:
+
+/usr/include/netinet/tcp.h:
+
+/usr/include/sys/un.h:
+
+/usr/include/signal.h:
+
+/usr/include/bits/signum.h:
+
+/usr/include/bits/siginfo.h:
+
+/usr/include/bits/sigaction.h:
+
+/usr/include/bits/sigcontext.h:
+
+/usr/include/bits/sigstack.h:
+
+/usr/include/bits/sigthread.h:
+
+/openils/include/opensrf/sha.h:
+
+/usr/include/libxml2/libxml/parserInternals.h:
+
+/usr/include/libxml2/libxml/HTMLparser.h:
+
+/usr/include/libxml2/libxml/chvalid.h:
+
+/openils/include/opensrf/osrf_message.h:
+
+/openils/include/opensrf/osrf_system.h:
+
+/openils/include/opensrf/osrf_settings.h:
+
+/openils/include/opensrf/osrfConfig.h:
+
+/openils/include/opensrf/osrf_cache.h:
+
+/usr/local/include/libmemcached/memcached.h:
+
+/usr/include/inttypes.h:
+
+/usr/lib/gcc/i486-linux-gnu/4.3.2/include/stdbool.h:
+
+/usr/local/include/libmemcached/visibility.h:
+
+/usr/local/include/libmemcached/configure.h:
+
+/usr/local/include/libmemcached/constants.h:
+
+/usr/local/include/libmemcached/types.h:
+
+/usr/local/include/libmemcached/string.h:
+
+/usr/local/include/libmemcached/stats.h:
+
+/usr/local/include/libhashkit/hashkit.h:
+
+/usr/local/include/libhashkit/visibility.h:
+
+/usr/local/include/libhashkit/configure.h:
+
+/usr/local/include/libhashkit/types.h:
+
+/usr/local/include/libhashkit/algorithm.h:
+
+/usr/local/include/libhashkit/behavior.h:
+
+/usr/local/include/libhashkit/digest.h:
+
+/usr/local/include/libhashkit/function.h:
+
+/usr/local/include/libhashkit/strerror.h:
+
+/usr/local/include/libmemcached/allocators.h:
+
+/usr/local/include/libmemcached/analyze.h:
+
+/usr/local/include/libmemcached/auto.h:
+
+/usr/local/include/libmemcached/behavior.h:
+
+/usr/local/include/libmemcached/callback.h:
+
+/usr/local/include/libmemcached/delete.h:
+
+/usr/local/include/libmemcached/dump.h:
+
+/usr/local/include/libmemcached/fetch.h:
+
+/usr/local/include/libmemcached/flush.h:
+
+/usr/local/include/libmemcached/flush_buffers.h:
+
+/usr/local/include/libmemcached/get.h:
+
+/usr/local/include/libmemcached/hash.h:
+
+/usr/local/include/libmemcached/parse.h:
+
+/usr/local/include/libmemcached/quit.h:
+
+/usr/local/include/libmemcached/result.h:
+
+/usr/local/include/libmemcached/server.h:
+
+/usr/local/include/libmemcached/server_list.h:
+
+/usr/local/include/libmemcached/storage.h:
+
+/usr/local/include/libmemcached/strerror.h:
+
+/usr/local/include/libmemcached/verbosity.h:
+
+/usr/local/include/libmemcached/version.h:
+
+/usr/local/include/libmemcached/sasl.h:
+
+/usr/include/dlfcn.h:
+
+/usr/include/bits/dlfcn.h:
+
+../../include/openils/oils_utils.h:
+
+../../include/openils/idl_fieldmapper.h:
+
+../../include/openils/oils_idl.h:
+
+../../include/openils/oils_event.h:
+
+../../include/openils/oils_constants.h:
+
+/usr/local/include/dbi/dbi.h:

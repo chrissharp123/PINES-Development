@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ils_events>
+            <event code='1208' textcode='TITLE_LAST_COPY'>
+        <desc xml:lang='ru-RU'>Последняя копия прикрепленная к заглавию удаляется или перемещается</desc>
+    </event>
+    <event code='1598' textcode='MONEY_USER_CIRCULATION_SUMMARY_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый money_user_circulation_summary не найден</desc>
+    </event>
+    <event code='1621' textcode='CONTAINER_COPY_BUCKET_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый container_copy_bucket не нйден</desc>
+    </event>
+    <event code='1218' textcode='ITEM_AGE_PROTECTED'>
+        <desc xml:lang='ru-RU'>диница очень свежа чтобы поставить на нем хранение</desc>
+    </event>
+    <event code='1214' textcode='PATRON_DUP_IDENT1'>
+        <desc xml:lang='ru-RU'>Выбранные тип исходной идентификации и значение в пользовании другим патроном</desc>
+    </event>
+    <event code='1561' textcode='PERMISSION_PERM_LIST_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый permission_perm_list не нйден</desc>
+    </event>
+    <event code='1213' textcode='PATRON_BARRED'>
+        <desc xml:lang='ru-RU'>Запрещенный патрон</desc>
+    </event>
+    <event code='1645' textcode='CONFIG_CIRC_MATRIX_TEST_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый config_circ_matrix_test не найден</desc>
+    </event>
+    <event code='7004' textcode='COPY_NOT_AVAILABLE'>
+        <desc xml:lang='ru-RU'> Копия недоступна </desc>
+    </event>
+    <event code='1591' textcode='METABIB_SERIES_FIELD_ENTRY_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый metabib_series_field_entry не найден</desc>
+    </event>
+    <event code='7027' textcode='PATRON_PASSWORD_WAS_NOT_STRONG'>
+        <desc xml:lang='ru-RU'>The user attempted to set their password to a weak value.</desc>
+    </event>
+    <event code='1649' textcode='VANDELAY_IMPORT_ITEM_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый vandelay.import_item не найден</desc>
+    </event>
+    <event code='1639' textcode='REPORTER_SCHEDULE_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый reporter_schedule не найден</desc>
+    </event>
+    <event code='1847' textcode='ACQ_FUNDING_SOURCE_DEDIT_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый config_bib_source не найден</desc>
+    </event>
+    <event code='1641' textcode='ACTION_OPEN_CIRC_COUNT_BY_CIRC_MOD_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый action_open_circ_count_by_circ_mod не найден</desc>
+    </event>
+    <event code='1609' textcode='CONFIG_RULES_RECURING_FINE_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый config_rules_max_fine не найден</desc>
+    </event>
+    <event code='1608' textcode='METABIB_SUBJECT_FIELD_ENTRY_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый metabib_subject_field_entry не найден</desc>
+    </event>
+    <event code='1711' textcode='BIB_QUEUE_EXISTS'>
+        <desc xml:lang='ru-RU'>Очередь библ записи с тем же назыанием уже существует</desc>
+    </event>
+    <event code='1875' textcode='ACQ_LINEITEM_GENERATED_ATTR_DEFINITION_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый actor_profile не найден</desc>
+    </event>
+    <event code='1876' textcode='ACQ_LINEITEM_LOCAL_ATTR_DEFINITION_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый actor_profile не найден</desc>
+    </event>
+    <event code='1877' textcode='ACQ_LINEITEM_MARC_ATTR_DEFINITION_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый actor_profile не найден</desc>
+    </event>
+    <event code='1878' textcode='ACQ_LINEITEM_USR_ATTR_DEFINITION_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый actor_profile не найден</desc>
+    </event>
+    <event code='1879' textcode='ACQ_LINEITEM_PROVIDER_ATTR_DEFINITION_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый actor_profile не найден</desc>
+    </event>
+    <event code='1207' textcode='REFUND_EXCEEDS_BALANCE'>
+        <desc xml:lang='ru-RU'>Возмещение больше чем отрицательный баланс на данную транзакцию</desc>
+    </event>
+    <event code='1504' textcode='ACTION_TRANSIT_COPY_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>
+			Кто то попытался извлечь транзитный объект из 
+			системы и объект не найден.
+		</desc>
+    </event>
+    <event code='1538' textcode='ACTION_SURVEY_RESPONSE_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый action_survey_response не найден</desc>
+    </event>
+    <event code='1555' textcode='MONEY_OPEN_BILLABLE_TRANSACTION_SUMMARY_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый money_open_billable_transaction_summary не найден</desc>
+    </event>
+    <event code='7000' textcode='ROUTE_ITEM'>
+        <desc xml:lang='ru-RU'> 
+			необходимо перенаправлять копию в другое местоположение	
+			Местоположение пункта доставки будет определено с помощью ключа 'org' 
+			внутри объекта события
+		</desc>
+    </event>
+    <event code='1554' textcode='CONFIG_RULES_CIRC_DURATION_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый config_rules_circ_duration не найден</desc>
+    </event>
+    <event code='1607' textcode='ACTION_OPEN_CIRCULATION_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый action_open_circulation не найден</desc>
+    </event>
+    <event code='1559' textcode='METABIB_FULL_REC_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый metabib_full_rec не найден</desc>
+    </event>
+    <event code='1527' textcode='OPEN_TCN_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Не можно найти TCN который не конфликтует с сущечтвующими записями</desc>
+    </event>
+    <event code='7016' textcode='ITEM_ON_HOLDS_SHELF'>
+        <desc xml:lang='ru-RU'>Запршенная единица находится на полке хранений</desc>
+    </event>
+    <event code='2001' textcode='DATABASE_UPDATE_FAILED'>
+        <desc xml:lang='ru-RU'>Попытка записать в базу провалилась</desc>
+    </event>
+    <event code='1563' textcode='METABIB_KEYWORD_FIELD_ENTRY_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый metabib_keyword_field_entry не найден</desc>
+    </event>
+    <event code='1546' textcode='CONFIG_AUDIENCE_MAP_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый config_audience_map не найден</desc>
+    </event>
+    <event code='8004' textcode='OFFLINE_CONFIG_ERROR'>
+        <desc xml:lang='ru-RU'> Офлайн сервер конфигурирован неправильно </desc>
+    </event>
+    <event code='8005' textcode='OFFLINE_CHECKSUM_FAILED'>
+        <desc xml:lang='ru-RU'> Офлайн сервер конфигурирован неправильно </desc>
+    </event>
+    <event code='8006' textcode='OFFLINE_SESSION_NOT_FOUND'>
+        <desc xml:lang='ru-RU'> Офлайн сервер конфигурирован неправильно </desc>
+    </event>
+    <event code='1001' textcode='NO_SESSION'>
+        <desc xml:lang='ru-RU'>Сессия пользователя или просрочена или не существует</desc>
+    </event>
+    <event code='1880' textcode='CONFIG_BILLING_TYPE_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый money_billing не найден</desc>
+    </event>
+    <event code='1700' textcode='NON_CAT_TYPE_EXISTS'>
+        <desc xml:lang='ru-RU'> Объект некаталогизированного типа уже есть </desc>
+    </event>
+    <event code='1529' textcode='ACTOR_WORKSTATION_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый actor_workstation не найден</desc>
+    </event>
+    <event code='1227' textcode='COPY_DELETE_WARNING'>
+        <desc xml:lang='ru-RU'>Копия в вопросе не в идеальном состоянии для удаления</desc>
+    </event>
+    <event code='1204' textcode='CIRC_BAD_STATUS'>
+        <desc xml:lang='ru-RU'>
+			Данная циркуляция не в стандартном состоянии или
+			циркуляция никогда не была правильно закрыта
+		</desc>
+    </event>
+    <event code='1855' textcode='ACQ_FUNDING_SOURCE_CREDIT_TOTAL_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый config_bib_source не найден</desc>
+    </event>
+    <event code='1870' textcode='ACQ_LINEITEM_DETAIL_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый actor_profile не найден</desc>
+    </event>
+    <event code='1223' textcode='PATRON_NO_PHONE'>
+        <desc xml:lang='ru-RU'>У пользователя нету назначенного действительного телефонного номера</desc>
+    </event>
+    <event code='1002' textcode='ACTOR_USER_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Кто то попытался извлечь пользователя из системы и пользователь не найдена</desc>
+    </event>
+    <event code='7007' textcode='COPY_NEEDED_FOR_HOLD'>
+        <desc xml:lang='ru-RU'> Для осуществения хранения требуется копия </desc>
+    </event>
+    <event code='7010' textcode='COPY_ALERT_MESSAGE'>
+        <desc xml:lang='ru-RU'> Запрошенная копия имеет прикрепленным сообщение тревоги </desc>
+    </event>
+    <event code='1643' textcode='VANDELAY_BIB_QUEUE_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый vandelay_bib_queue не найден</desc>
+    </event>
+    <event code='1849' textcode='ACQ_FUND_DEBIT_TOTAL_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый config_bib_source не найден</desc>
+    </event>
+    <event code='1636' textcode='REPORTER_OUTPUT_FOLDER_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый reporter_output_folder не найден</desc>
+    </event>
+    <event code='7008' textcode='MAX_RENEWALS_REACHED'>
+        <desc xml:lang='ru-RU'> Циркуляция не имеет больше ожидающих обновлений </desc>
+    </event>
+    <event code='1217' textcode='PATRON_INACTIVE'>
+        <desc xml:lang='ru-RU'>Этот абонентский счет отмечен как неактивный</desc>
+    </event>
+    <event code='8003' textcode='OFFLINE_PARAM_ERROR'>
+        <desc xml:lang='ru-RU'> Отсутствующие параметры в офлайн выгрузке </desc>
+    </event>
+    <event code='1637' textcode='REPORTER_REPORT_FOLDER_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый reporter_report_folder не найден</desc>
+    </event>
+    <event code='1545' textcode='PERM_EX_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый perm_ex не найден</desc>
+    </event>
+    <event code='1553' textcode='ACTOR_ORG_UNIT_CLOSED_DATE_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый actor_org_unit_closed_date не найден</desc>
+    </event>
+    <event code='1848' textcode='ACQ_FUND_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый actor_card не найден</desc>
+    </event>
+    <event code='1541' textcode='AUTHORITY_RECORD_DESCRIPTOR_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый authority_record_descriptor не найден</desc>
+    </event>
+    <event code='7011' textcode='COPY_STATUS_LOST'>
+        <desc xml:lang='ru-RU'>Копия отмечена как утерянная</desc>
+    </event>
+    <event code='1851' textcode='ACQ_FUND_ENCUMBRANCE_TOTAL_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый config_bib_source не найден</desc>
+    </event>
+    <event code='1587' textcode='CONTAINER_CALL_NUMBER_BUCKET_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый container_call_number_bucket не найден</desc>
+    </event>
+    <event code='1229' textcode='VOLUME_DELETED'>
+        <desc xml:lang='ru-RU'>Запрашиваемый том отмечен как удаленный</desc>
+    </event>
+    <event code='1635' textcode='REPORTER_REPORT_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый reporter_report не найден</desc>
+    </event>
+    <event code='1631' textcode='MONEY_COLLECTIONS_TRACKER_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый money_collections_tracker не найден</desc>
+    </event>
+    <event code='1632' textcode='CONFIG_RULES_AGE_HOLD_PROTECT_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый money_collections_tracker не найден</desc>
+    </event>
+    <event code='1633' textcode='MONEY_DESK_PAYMENT_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый money_collections_tracker не найден</desc>
+    </event>
+    <event code='1651' textcode='AUTHORITY_RECORD_NUMBER_EXISTS'>
+        <desc xml:lang='ru-RU'>An authority record already exists with the requested ARN</desc>
+    </event>
+    <event code='5000' textcode='PERM_FAILURE'>
+        <desc xml:lang='ru-RU'>Полномочия запрещены</desc>
+    </event>
+    <event code='7015' textcode='NEGATIVE_PATRON_BALANCE'>
+        <desc xml:lang='ru-RU'>Запрашиваемое действие приведет к негативному балансу патрона</desc>
+    </event>
+    <event code='1569' textcode='ACTOR_USER_STANDING_PENALTY_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый actor_user_standing_penalty не найден</desc>
+    </event>
+    <event code='8000' textcode='OFFLINE_SESSION_ACTIVE'>
+        <desc xml:lang='ru-RU'> Офлайн сессия для этого местоположения на данный момент в процессе </desc>
+    </event>
+    <event code='1200' textcode='USERNAME_EXISTS'>
+        <desc xml:lang='ru-RU'>Данное имя пользователя уже есть в базе</desc>
+    </event>
+    <event code='1602' textcode='ACTOR_STAT_CAT_ENTRY_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый actor_stat_cat_entry не найден</desc>
+    </event>
+    <event code='1710' textcode='CONTAINER_EXISTS'>
+        <desc xml:lang='ru-RU'>Пользователь уже создал букет с запрашиваемым именем</desc>
+    </event>
+    <event code='7001' textcode='PATRON_BAD_STANDING'>
+        <desc xml:lang='ru-RU'>
+			Патрон в вопросе не может взять материалы, так как
+			его клиентский счет в плохом состоянии
+		</desc>
+    </event>
+    <event code='1525' textcode='BILLING_NOT_FOUND'>
+        <desc xml:lang='ru-RU'> Запрашиваемая заметка на счет оплаты не существует </desc>
+    </event>
+    <event code='1575' textcode='CONTAINER_BIBLIO_RECORD_ENTRY_BUCKET_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый container_biblio_record_entry_bucket не найден</desc>
+    </event>
+    <event code='7021' textcode='RESERVATION_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Booking reservation not found</desc>
+    </event>
+    <event code='7025' textcode='PATRON_TOO_MANY_ACTIVE_PASSWORD_RESET_REQUESTS'>
+        <desc xml:lang='ru-RU'>There are too many active password reset request sessions for this patron.</desc>
+    </event>
+    <event code='10004' textcode='ACQ_LINEITEM_NO_PRICE'>
+        <desc xml:lang='ru-RU'>The lineitem has no price</desc>
+    </event>
+    <event code='10005' textcode='ACQ_LINEITEM_NO_PROVIDER'>
+        <desc xml:lang='ru-RU'>The lineitem has no price</desc>
+    </event>
+    <event code='1226' textcode='REFUND_EXCEEDS_DESK_PAYMENTS'>
+        <desc xml:lang='ru-RU'>
+			Этот размер компенсации не разрешен, так как превышает 
+			суммарный размер кассовых оплат для данной транзакций.
+		</desc>
+    </event>
+    <event code='1619' textcode='ACTOR_STAT_CAT_ENTRY_USER_MAP_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый actor_stat_cat_entry_user_map не найден</desc>
+    </event>
+    <event code='1858' textcode='ACQ_LINEITEM_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый actor_profile не найден</desc>
+    </event>
+    <event code='1558' textcode='ASSET_COPY_NOTE_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый asset_copy_note не найден</desc>
+    </event>
+    <event code='1853' textcode='ACQ_FUND_COMBINED_BALANCE_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый config_bib_source не найден</desc>
+    </event>
+    <event code='1850' textcode='ACQ_FUND_ALLOCATION_TOTAL_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый config_bib_source не найден</desc>
+    </event>
+    <event code='1616' textcode='MONEY_OPEN_USER_CIRCULATION_SUMMARY_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый money_open_user_circulation_summaryне найден</desc>
+    </event>
+    <event code='1624' textcode='MONEY_PAYMENT_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый money_payment не найден</desc>
+    </event>
+    <event code='1596' textcode='ACTOR_ORG_UNIT_TYPE_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый actor_org_unit_type не найден</desc>
+    </event>
+    <event code='1004' textcode='Z3950_BAD_QUERY'>
+        <desc xml:lang='ru-RU'>Z очередь не оформлена корректно</desc>
+    </event>
+    <event code='1205' textcode='CARD_EXISTS'>
+        <desc xml:lang='ru-RU'>Штрих код заданного пользователя уже есть</desc>
+    </event>
+    <event code='1713' textcode='SURVEY_RESPONSES_EXIST'>
+        <desc xml:lang='ru-RU'>Responses to this survey exist</desc>
+    </event>
+    <event code='1544' textcode='CONFIG_METABIB_FIELD_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый config_metabib_field не найден</desc>
+    </event>
+    <event code='1584' textcode='ACTOR_ORG_ADDRESS_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый actor_org_address не найден</desc>
+    </event>
+    <event code='1501' textcode='BIBLIO_RECORD_ENTRY_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый biblio_record_entry не найден</desc>
+    </event>
+    <event code='1852' textcode='ACQ_FUND_SPENT_TOTAL_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый config_bib_source не найден</desc>
+    </event>
+    <event code='1613' textcode='PERMISSION_GRP_TREE_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый permission_grp_tree не найден</desc>
+    </event>
+    <event code='10001' textcode='ACQ_LINEITEM_NO_COPIES'>
+        <desc xml:lang='ru-RU'>The lineitem has no attached copies</desc>
+    </event>
+    <event code='1536' textcode='ACTION_IN_HOUSE_USE_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый action_in_house_use не найден</desc>
+    </event>
+    <event code='1872' textcode='ACQ_LINEITEM_PROVIDER_ATTR_DEFINITION_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>The requested acq.lineitem_provider_attr_definition was not found</desc>
+    </event>
+    <event code='1562' textcode='METABIB_METARECORD_SOURCE_MAP_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый metabib_metarecord_source_map не найден</desc>
+    </event>
+    <event code='1531' textcode='ACTION_SURVEY_QUESTION_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый action_survey_question не найден</desc>
+    </event>
+    <event code='1612' textcode='CONFIG_RULES_MAX_FINE_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый config_rules_max_fine не найден</desc>
+    </event>
+    <event code='1557' textcode='ACTOR_ORG_UNIT_SETTING_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый actor_org_unit_setting не найден</desc>
+    </event>
+    <event code='1629' textcode='PERMISSION_USR_GRP_MAP_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый permission_usr_grp_map не найден</desc>
+    </event>
+    <event code='1215' textcode='CIRC_EXCEEDS_COPY_RANGE'>
+        <desc xml:lang='ru-RU'>
+			Выбранная копия не может быть циркулирована так как местонахождение 
+			получателя не в интервале циркуляции копии
+		</desc>
+    </event>
+    <event code='1606' textcode='MONEY_WORK_PAYMENT_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый money_work_payment не найден</desc>
+    </event>
+    <event code='2000' textcode='BAD_PARAMS'>
+        <desc xml:lang='ru-RU'>В методе обнаружены неправильные параметры</desc>
+    </event>
+    <event code='1564' textcode='MONEY_CASH_PAYMENT_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запашиваемый money_cash_payment не найден</desc>
+    </event>
+    <event code='1221' textcode='ORG_CANNOT_HAVE_VOLS'>
+        <desc xml:lang='ru-RU'>Выбранное местоположение не может иметь прикрепленных томов</desc>
+    </event>
+    <event code='1704' textcode='TCN_EXISTS'>
+        <desc xml:lang='ru-RU'>Запись с запрошенным значением TCN уже есть</desc>
+    </event>
+    <event code='1' textcode='UNKNOWN'>
+        <desc xml:lang='ru-RU'>Placeholder event.  Used for development only</desc>
+    </event>
+    <event code='1622' textcode='BIBLIO_RECORD_NODE_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый biblio_record_node не найден</desc>
+    </event>
+    <event code='1534' textcode='ACTOR_USER_SETTING_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый actor_user_setting не найден</desc>
+    </event>
+    <event code='1211' textcode='BILL_ALREADY_VOIDED'>
+        <desc xml:lang='ru-RU'>Выбор счета для оплаты опустошен</desc>
+    </event>
+    <event code='7026' textcode='PATRON_NOT_AN_ACTIVE_PASSWORD_RESET_REQUEST'>
+        <desc xml:lang='ru-RU'>The user attempted to update their password using a stale or inactive password reset request session.</desc>
+    </event>
+    <event code='1222' textcode='PATRON_NO_EMAIL_ADDRESS'>
+        <desc xml:lang='ru-RU'>Пользователь не имеет дйствительный адрес эл почты</desc>
+    </event>
+    <event code='1854' textcode='ACQ_FUND_SPENT_BALANCE_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый config_bib_source не найден</desc>
+    </event>
+    <event code='1523' textcode='TITLE_NOTE_NOT_FOUND'>
+        <desc xml:lang='ru-RU'> Запрошенное примечание заглавия не существует </desc>
+    </event>
+    <event code='1605' textcode='CONFIG_LIT_FORM_MAP_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый config_lit_form_map не найден</desc>
+    </event>
+    <event code='1567' textcode='METABIB_RECORD_DESCRIPTOR_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый metabib_record_descriptor не найден</desc>
+    </event>
+    <event code='9000' textcode='REPORT_TEMPLATE_EXISTS'>
+        <desc xml:lang='ru-RU'> Шаблон отчета с заданным именем и папкой уже существует</desc>
+    </event>
+    <event code='1500' textcode='ACTION_CIRCULATION_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>
+			Кто то попытался извлечь объект циркуляции из системы и 
+			объект не найден.
+		</desc>
+    </event>
+    <event code='7009' textcode='CIRC_CLAIMS_RETURNED'>
+        <desc xml:lang='ru-RU'> Запрошенная циркуляция отмечена возврат рекламаций </desc>
+    </event>
+    <event code='1630' textcode='ACTOR_USER_NOTE_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запршенный actor_user_note не найден</desc>
+    </event>
+    <event code='7005' textcode='LOCATION_CIRC_NOT_ALLOWED'>
+        <desc xml:lang='ru-RU'> Местоположение не разрешает циркулировать материалы </desc>
+    </event>
+    <event code='1508' textcode='ASSET_CALL_NUMBER_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый asset_call_number не найден</desc>
+    </event>
+    <event code='1209' textcode='Z3950_LOGIN_FAILED'>
+        <desc xml:lang='ru-RU'>Логин не удался</desc>
+    </event>
+    <event code='1543' textcode='MONEY_CREDIT_CARD_PAYMENT_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый money_credit_card_payment не найден</desc>
+    </event>
+    <event code='7023' textcode='RESERVATION_BAD_PARAMS'>
+        <desc xml:lang='ru-RU'>Provided parameters describe unacceptable reservation.</desc>
+    </event>
+    <event code='1857' textcode='ACQ_FUNDING_SOURCE_BALANCE_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый config_bib_source не найден</desc>
+    </event>
+    <event code='10000' textcode='ACQ_LINEITEM_APPROVED'>
+        <desc xml:lang='ru-RU'>The lineitem cannot be altered because it has already been approved</desc>
+    </event>
+    <event code='1614' textcode='ACTION_SURVEY_ANSWER_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый action_survey_answer не найден</desc>
+    </event>
+    <event code='1535' textcode='METABIB_AUTHOR_FIELD_ENTRY_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый metabib_author_field_entry не найден</desc>
+    </event>
+    <event code='1626' textcode='ASSET_STAT_CAT_ENTRY_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый asset_stat_cat_entry не найден</desc>
+    </event>
+    <event code='1595' textcode='CONFIG_NON_CATALOGED_TYPE_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый config_non_cataloged_type не найден</desc>
+    </event>
+    <event code='1225' textcode='TRANSIT_ABORT_NOT_ALLOWED'>
+        <desc xml:lang='ru-RU'>Транзит на данную единицу невозможно прекратить в связи с состоянием единицы</desc>
+    </event>
+    <event code='1542' textcode='CONFIG_LANGUAGE_MAP_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый config_language_map не найден</desc>
+    </event>
+    <event code='1844' textcode='ACQ_FUNDING_SOURCE_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый config_bib_source не найден</desc>
+    </event>
+    <event code='1206' textcode='VOLUME_NOT_EMPTY'>
+        <desc xml:lang='ru-RU'>Выбранный том имеет прикрепленные копии</desc>
+    </event>
+    <event code='1540' textcode='AUTHORITY_RECORD_ENTRY_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый authority_record_entry не найден</desc>
+    </event>
+    <event code='1203' textcode='COPY_BAD_STATUS'>
+        <desc xml:lang='ru-RU'>Данная копия не в стандартном состоянии циркуляции</desc>
+    </event>
+    <event code='1601' textcode='MONEY_BILLABLE_TRANSACTION_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый money_billable_transaction не найден</desc>
+    </event>
+    <event code='1871' textcode='PERMISSION_USR_OBJECT_PERM_MAP_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый permission_usr_perm_map Запрашиваемый</desc>
+    </event>
+    <event code='7020' textcode='COPY_RESERVED'>
+        <desc xml:lang='ru-RU'>Item reserved for booking request</desc>
+    </event>
+    <event code='1550' textcode='MONEY_OPEN_USER_SUMMARY_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый money_open_user_summary не найден</desc>
+    </event>
+    <event code='3' textcode='NO_CHANGE'>
+        <desc xml:lang='ru-RU'>Нету изменений</desc>
+    </event>
+    <event code='1201' textcode='CIRC_PERMIT_BAD_KEY'>
+        <desc xml:lang='ru-RU'>Попытка выдачи без разрешенного ключа выдачи</desc>
+    </event>
+    <event code='1593' textcode='MONEY_CREDIT_PAYMENT_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый money_credit_payment не найден</desc>
+    </event>
+    <event code='7017' textcode='ROUTE_TO_COPY_LOCATION'>
+        <desc xml:lang='ru-RU'> 
+		Копия должна быть перенаправлена в местоположение копии. Местоположение
+		должно быть указано внутри события с ключом 'местоположение'
+		</desc>
+    </event>
+    <event code='1618' textcode='METABIB_TITLE_FIELD_ENTRY_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый metabib_title_field_entry не найден</desc>
+    </event>
+    <event code='7022' textcode='RESERVATION_CAPTURE_FAILED'>
+        <desc xml:lang='ru-RU'>Booking reservation capture failed</desc>
+    </event>
+    <event code='1202' textcode='ITEM_NOT_CATALOGED'>
+        <desc xml:lang='ru-RU'>Запрошенная единица не каталогизирована в базе</desc>
+    </event>
+    <event code='1520' textcode='WORKSTATION_NOT_FOUND'>
+        <desc xml:lang='ru-RU'> Запрашиваемый объект для рабочей станции не существует </desc>
+    </event>
+    <event code='1628' textcode='MONEY_BILLING_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый money_billing не найден</desc>
+    </event>
+    <event code='1507' textcode='CONTAINER_ITEM_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>
+			Кто то попытался извлечь единица объект контейтера из 
+			системы и объект не айден.
+		</desc>
+    </event>
+    <event code='2002' textcode='DATABASE_QUERY_FAILED'>
+        <desc xml:lang='ru-RU'>Попытка опроса базы провалилась</desc>
+    </event>
+    <event code='1549' textcode='CONFIG_STANDING_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый config_standing не найден</desc>
+    </event>
+    <event code='1210' textcode='INCORRECT_PASSWORD'>
+        <desc xml:lang='ru-RU'>Установленный пароль не правильный</desc>
+    </event>
+    <event code='1582' textcode='CONFIG_ITEM_TYPE_MAP_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый config_item_type_map не найден</desc>
+    </event>
+    <event code='8007' textcode='OFFLINE_SESSION_EXISTS'>
+        <desc xml:lang='ru-RU'> Сессия с таким именем уже есть </desc>
+    </event>
+    <event code='1650' textcode='CONFIG_CIRC_MATRIX_RULESET_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый config_circ_matrix_ruleset_not_found не найден</desc>
+    </event>
+    <event code='10002' textcode='ACQ_LINEITEM_DETAIL_NO_FUND'>
+        <desc xml:lang='ru-RU'>The lineitem detail has no associated fund</desc>
+    </event>
+    <event code='7003' textcode='COPY_CIRC_NOT_ALLOWED'>
+        <desc xml:lang='ru-RU'> Копия мишень нельзя циркулировать </desc>
+    </event>
+    <event code='1530' textcode='CONFIG_IDENTIFICATION_TYPE_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый config_identification_type не найден</desc>
+    </event>
+    <event code='1579' textcode='ASSET_COPY_LOCATION_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый asset_copy_location не найден</desc>
+    </event>
+    <event code='1506' textcode='CONTAINER_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>
+			Кто то попытался извлечь объект контейнера из 
+			системы и объект не найден.
+		</desc>
+    </event>
+    <event code='1571' textcode='ASSET_CALL_NUMBER_NOTE_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый asset_call_number_note не найдвен</desc>
+    </event>
+    <event code='1528' textcode='ACTOR_USER_ADDRESS_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Затребованный адрес не найден</desc>
+    </event>
+    <event code='7002' textcode='PATRON_EXCEEDS_CHECKOUT_COUNT'>
+        <desc xml:lang='ru-RU'>Патрон в запросе имет максимальное число выданных материалов</desc>
+    </event>
+    <event code='1003' textcode='Z3950_SEARCH_FAILED'>
+        <desc xml:lang='ru-RU'>Z поиск неудался</desc>
+    </event>
+    <event code='1533' textcode='ACTOR_USR_NOTE_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый actor_usr_note не найден</desc>
+    </event>
+    <event code='1620' textcode='PERMISSION_GRP_PERM_MAP_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый permission_grp_perm_map не найден</desc>
+    </event>
+    <event code='1709' textcode='MAX_HOLDS'>
+        <desc xml:lang='ru-RU'>Пользователь достиг максимального числа хранений</desc>
+    </event>
+    <event code='1706' textcode='ITEM_BARCODE_EXISTS'>
+        <desc xml:lang='ru-RU'>Единица с тем же штрих кодом существует</desc>
+    </event>
+    <event code='7014' textcode='COPY_IN_TRANSIT'>
+        <desc xml:lang='ru-RU'>Копия в транзите</desc>
+    </event>
+    <event code='1219' textcode='COPY_REMOTE_CIRC_LIB'>
+        <desc xml:lang='ru-RU'>Копия удаленной циркулирующей библиотеки (circ_lib) обнаружена</desc>
+    </event>
+    <event code='1220' textcode='ITEM_NOT_HOLDABLE'>
+        <desc xml:lang='ru-RU'>Копия удаленной циркулирующей библиотеки (circ_lib) обнаружена</desc>
+    </event>
+    <event code='1702' textcode='OPEN_CIRCULATION_EXISTS'>
+        <desc xml:lang='ru-RU'> На запрокенную единицу есть открытая циркуляция </desc>
+    </event>
+    <event code='0' textcode='SUCCESS'>
+        <desc xml:lang='ru-RU'>Success</desc>
+    </event>
+    <event code='1231' textcode='RECORD_NOT_EMPTY'>
+        <desc xml:lang='ru-RU'>Выбранная библ запись имеет прикрепленные тома</desc>
+    </event>
+    <event code='1503' textcode='ACTION_HOLD_REQUEST_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый action_hold_request не найден</desc>
+    </event>
+    <event code='1212' textcode='PATRON_EXCEEDS_OVERDUE_COUNT'>
+        <desc xml:lang='ru-RU'>Патрон имеет слишком много просроченных единиц</desc>
+    </event>
+    <event code='1578' textcode='ACTION_HOLD_NOTIFICATION_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый action_hold_notification не найден</desc>
+    </event>
+    <event code='1610' textcode='MONEY_CHECK_PAYMENT_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый money_check_payment не найден</desc>
+    </event>
+    <event code='1623' textcode='PERMISSION_USR_PERM_MAP_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый permission_usr_perm_map Запрашиваемый</desc>
+    </event>
+    <event code='1581' textcode='ASSET_STAT_CAT_ENTRY_COPY_MAP_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый asset_stat_cat_entry_copy_map не найден</desc>
+    </event>
+    <event code='1547' textcode='CONFIG_ITEM_FORM_MAP_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый config_item_form_map не найден</desc>
+    </event>
+    <event code='1592' textcode='CONTAINER_USER_BUCKET_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый container_user_bucket не найден</desc>
+    </event>
+    <event code='1617' textcode='ACTION_UNFULFILLED_HOLD_LIST_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый action_unfulfilled_hold_list не найен</desc>
+    </event>
+    <event code='1552' textcode='ACTOR_ORG_UNIT_HOURS_OF_OPERATION_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый actor_org_unit_hours_of_operation не найден</desc>
+    </event>
+    <event code='1576' textcode='EX_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запршенный ex не найден</desc>
+    </event>
+    <event code='7019' textcode='HOLD_CAPTURE_DELAYED'>
+        <desc xml:lang='ru-RU'>Захват хранения для этой единицы отложен</desc>
+    </event>
+    <event code='1502' textcode='ASSET_COPY_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>
+			Кто то попытался извлечь копия объект из 
+			системы и объект не найден.
+		</desc>
+    </event>
+    <event code='1703' textcode='WORKSTATION_NAME_EXISTS'>
+        <desc xml:lang='ru-RU'> Рабочяя станция с таким именем уже есть </desc>
+    </event>
+    <event code='1568' textcode='CONFIG_COPY_STATUS_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый config_copy_status не найден</desc>
+    </event>
+    <event code='1539' textcode='CONTAINER_COPY_BUCKET_ITEM_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запршенный container_copy_bucket_item не найден</desc>
+    </event>
+    <event code='1590' textcode='ACTOR_STAT_CAT_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый actor_stat_cat не найден</desc>
+    </event>
+    <event code='9001' textcode='REPORT_REPORT_EXISTS'>
+        <desc xml:lang='ru-RU'> Отчет с заданным именем и папкой уже существует</desc>
+    </event>
+    <event code='1705' textcode='VOLUME_LABEL_EXISTS'>
+        <desc xml:lang='ru-RU'>Том с тем же ярлыком, заглавием и библиотекой собственником уже есть</desc>
+    </event>
+    <event code='8008' textcode='OFFLINE_INVALID_SESSION'>
+        <desc xml:lang='ru-RU'> Неправильная имя сессии </desc>
+    </event>
+    <event code='1577' textcode='ACTION_HOLD_COPY_MAP_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый action_hold_copy_map не найден</desc>
+    </event>
+    <event code='1648' textcode='PERMISSION_USR_WORK_OU_MAP_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый permission_usr_work_ou_map не найден</desc>
+    </event>
+    <event code='1638' textcode='REPORTER_TEMPLATE_FOLDER_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый reporter_template_folder не найден</desc>
+    </event>
+    <event code='7024' textcode='HOLD_RESERVATION_CONFLICT'>
+        <desc xml:lang='ru-RU'>Both a hold and a reservation exist for this item; staff intervention is required to resolve the conflict.</desc>
+    </event>
+    <event code='1644' textcode='VANDELAY_AUTHORITY_QUEUE_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый vandelay_authority_queue не найден</desc>
+    </event>
+    <event code='7006' textcode='COPY_IS_REFERENCE'>
+        <desc xml:lang='ru-RU'> Копия является справочным материалом </desc>
+    </event>
+    <event code='1634' textcode='REPORTER_TEMPLATE_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый reporter_template не найден</desc>
+    </event>
+    <event code='1583' textcode='ACTION_SURVEY_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый action_survey не найден</desc>
+    </event>
+    <event code='1859' textcode='ACQ_PURCHASE_ORDER_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый actor_profile не найден</desc>
+    </event>
+    <event code='1625' textcode='CONTAINER_BIBLIO_RECORD_ENTRY_BUCKET_ITEM_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый container_biblio_record_entry_bucket_item не найден</desc>
+    </event>
+    <event code='1000' textcode='LOGIN_FAILED'>
+        <desc xml:lang='ru-RU'>Логин пользователя не удалась</desc>
+    </event>
+    <event code='1873' textcode='ACQ_CURRENCY_TYPE_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый actor_org_unit_type не найден</desc>
+    </event>
+    <event code='1599' textcode='MONEY_GROCERY_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый money_grocery не найден</desc>
+    </event>
+    <event code='8009' textcode='OFFLINE_NO_ORG'>
+        <desc xml:lang='ru-RU'> Не проведен орг id </desc>
+    </event>
+    <event code='8010' textcode='OFFLINE_SESSION_COMPLETE'>
+        <desc xml:lang='ru-RU'> Не проведен орг id </desc>
+    </event>
+    <event code='7012' textcode='COPY_STATUS_MISSING'>
+        <desc xml:lang='ru-RU'>Копия отмечена как отсутствующая</desc>
+    </event>
+    <event code='1532' textcode='MONEY_BILLABLE_TRANSACTION_SUMMARY_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый money_billable_transaction_summary не найден</desc>
+    </event>
+    <event code='8001' textcode='OFFLINE_SESSION_FILE_EXISTS'>
+        <desc xml:lang='ru-RU'> Офлайновый файл для этой рабочей станции существует внутри данной сесси </desc>
+    </event>
+    <event code='2003' textcode='INTERNAL_SERVER_ERROR'>
+        <desc xml:lang='ru-RU'>Внутренняя ошибка сервера</desc>
+    </event>
+    <event code='1647' textcode='VANDELAY_QUEUED_AUTHORITY_RECORD_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый vandelay_queued_authority_record не найден</desc>
+    </event>
+    <event code='8002' textcode='OFFLINE_FILE_ERROR'>
+        <desc xml:lang='ru-RU'> Офлайн файл или папка не возможно создавать или сделать доступным </desc>
+    </event>
+    <event code='1597' textcode='BIBLIO_RECORD_NOTE_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый biblio_record_note не найден</desc>
+    </event>
+    <event code='1846' textcode='ACQ_FUNDING_SOURCE_CREDIT_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый config_bib_source не найден</desc>
+    </event>
+    <event code='1588' textcode='ASSET_STAT_CAT_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый asset_stat_cat не найден</desc>
+    </event>
+    <event code='1224' textcode='PATRON_ACCOUNT_EXPIRED'>
+        <desc xml:lang='ru-RU'>Клиентский счет патрона истек</desc>
+    </event>
+    <event code='1560' textcode='METABIB_METARECORD_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый metabib_metarecord не найден</desc>
+    </event>
+    <event code='1707' textcode='HOLD_EXISTS'>
+        <desc xml:lang='ru-RU'>На выбранную единицу пользователь уже имеет открытое хранение</desc>
+    </event>
+    <event code='1712' textcode='AUTH_QUEUE_EXISTS'>
+        <desc xml:lang='ru-RU'>Очередь авторитетной записи с тем же именем уже есть</desc>
+    </event>
+    <event code='1566' textcode='MONEY_FORGIVE_PAYMENT_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый money_forgive_payment не найден</desc>
+    </event>
+    <event code='1230' textcode='XACT_COLLISION'>
+        <desc xml:lang='ru-RU'>Сохраненная единица отредактирована другим пользователем</desc>
+    </event>
+    <event code='1843' textcode='ACQ_LINEITEM_ATTR_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый actor_profile не найден</desc>
+    </event>
+    <event code='1708' textcode='MONEY_COLLECTIONS_TRACKER_EXISTS'>
+        <desc xml:lang='ru-RU'>Дублетный money.collections_tracker объект уже есть в базе</desc>
+    </event>
+    <event code='1845' textcode='ACQ_PROVIDER_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый actor_profile не найден</desc>
+    </event>
+    <event code='1600' textcode='CONFIG_BIB_SOURCE_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый config_bib_source не найден</desc>
+    </event>
+    <event code='1646' textcode='VANDELAY_QUEUED_BIB_RECORD_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый vandelay_queued_bib_record не найден</desc>
+    </event>
+    <event code='1228' textcode='BIB_RECORD_DELETED'>
+        <desc xml:lang='ru-RU'>Запрашиваемая библ запись отмечена как стертая</desc>
+    </event>
+    <event code='1841' textcode='ACQ_PICKLIST_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый actor_card не найден</desc>
+    </event>
+    <event code='7018' textcode='COPY_MARKED_LOST'>
+        <desc xml:lang='ru-RU'>Запрашиваемая единица отмечена как утерянная</desc>
+    </event>
+    <event code='1642' textcode='CONFIG_CIRC_MODIFIER_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый config_circ_modifier не найден</desc>
+    </event>
+    <event code='1701' textcode='COPY_LOCATION_EXISTS'>
+        <desc xml:lang='ru-RU'> Объект копии местоположения уже существует </desc>
+    </event>
+    <event code='1589' textcode='ACTOR_CARD_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый actor_card не найден</desc>
+    </event>
+    <event code='1856' textcode='ACQ_FUNDING_SOURCE_ALLOCATION_TOTAL_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый config_bib_source не найден</desc>
+    </event>
+    <event code='1216' textcode='PATRON_CARD_INACTIVE'>
+        <desc xml:lang='ru-RU'>Карта патрона неактивна</desc>
+    </event>
+    <event code='1881' textcode='PERMISSION_GRP_PENALTY_THRESHOLD_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый permission_grp_tree не найден</desc>
+    </event>
+    <event code='7013' textcode='PATRON_EXCEEDS_FINES'>
+        <desc xml:lang='ru-RU'>Патрон в запросе имет максимальное значение штрафа</desc>
+    </event>
+    <event code='1586' textcode='ACTOR_ORG_UNIT_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый actor_org_unit не найден</desc>
+    </event>
+    <event code='1574' textcode='CONTAINER_CALL_NUMBER_BUCKET_ITEM_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый container_call_number_bucket_item не найден</desc>
+    </event>
+    <event code='1518' textcode='ACTION_HOLD_TRANSIT_COPY_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый action_hold_transit_copy не найден</desc>
+    </event>
+    <event code='1594' textcode='AUTHORITY_FULL_REC_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый authority_full_rec не найден</desc>
+    </event>
+    <event code='1565' textcode='ACTOR_PROFILE_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый actor_profile не найден</desc>
+    </event>
+    <event code='1580' textcode='METABIB_VIRTUAL_RECORD_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый metabib_virtual_record не найден</desc>
+    </event>
+    <event code='1640' textcode='ACTOR_USR_ORG_UNIT_OPT_IN_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый actor_usr_org_unit_opt_in не найден</desc>
+    </event>
+    <event code='1572' textcode='AUTHORITY_RECORD_NOTE_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый authority_record_note не найден</desc>
+    </event>
+    <event code='10003' textcode='ACQ_LINEITEM_DETAIL_NO_ORG'>
+        <desc xml:lang='ru-RU'>The lineitem detail has no owning_lib</desc>
+    </event>
+    <event code='1603' textcode='CONTAINER_USER_BUCKET_ITEM_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый container_user_bucket_item не найден</desc>
+    </event>
+    <event code='1615' textcode='ACTION_NON_CATALOGED_CIRCULATION_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый action_non_cataloged_circulation не найден</desc>
+    </event>
+    <event code='1604' textcode='MONEY_USER_SUMMARY_NOT_FOUND'>
+        <desc xml:lang='ru-RU'>Запрашиваемый money_user_summary не найден</desc>
+    </event>
+</ils_events>

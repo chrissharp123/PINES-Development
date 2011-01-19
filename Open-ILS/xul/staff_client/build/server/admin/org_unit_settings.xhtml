@@ -1,0 +1,331 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<!-- 
+# Copyright (C) 2008  Georgia Public Library Service
+# Bill Erickson <erickson@esilibrary.com>
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+# 
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+-->
+
+<!DOCTYPE html PUBLIC 
+    "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" [
+    <!--#include virtual="/opac/locale/${locale}/lang.dtd"-->
+]>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+    <head>
+        <title>&staff.server.admin.org_unit_settings.title;</title>
+        <link type='text/css' rel='stylesheet' href='admin.css'/>
+        <script type="text/javascript" djConfig="parseOnLoad: true,isDebug:false" src="/js/dojo/dojo/dojo.js"></script>
+ <script type="text/javascript" djConfig="parseOnLoad: true,isDebug:false" src="/js/dojo/dojo/openils_dojo.js"></script>
+        <script type="text/javascript" src='org_unit_settings.js'></script>
+        <script>
+            // Configure the different settings
+            var osSettings = {
+                'circ.lost_materials_processing_fee' : {
+                    label : '&staff.server.admin.org_settings.lost_fee;',
+                    type : 'currency',
+                },
+                'cat.default_item_price' : {
+                    label : '&staff.server.admin.org_settings.default_price;',
+                    type : 'currency',
+                },
+                'auth.opac_timeout' : {
+                    label : '&staff.server.admin.org_settings.opac_timeout;',
+                    type : 'number',
+                },
+                'auth.staff_timeout' : {
+                    label : '&staff.server.admin.org_settings.staff_timeout;',
+                    type : 'number',
+                },
+                'org.bounced_emails' : {
+                    label : '&staff.server.admin.org_settings.from_address;',
+                    desc : '&staff.server.admin.org_settings.bounce_note;'
+                },
+                'circ.hold_expire_alert_interval' : {
+                    label : '&staff.server.admin.org_settings.circ.hold_expire_alert_interval;',
+                    desc : '&staff.server.admin.org_settings.circ.hold_expire_alert_interval.desc;',
+                },
+                'circ.hold_expire_interval' : {
+                    label : '&staff.server.admin.org_settings.circ.hold_expire_interval;',
+                    desc : '&staff.server.admin.org_settings.circ.hold_expire_interval.desc;',
+                },
+                'global.credit.allow' : {
+                    label : '&staff.server.admin.org_settings.global.credit.allow;',
+                    desc : '&staff.server.admin.org_settings.global.credit.allow.desc;',
+                    type : 'bool'
+                },
+                'global.default_locale' : {
+                    label : '&staff.server.admin.org_settings.global.default_locale;',
+                },
+                'circ.void_overdue_on_lost' : {
+                    label : '&staff.server.admin.org_settings.circ.void_overdue_on_lost;',
+                    type : 'bool'
+                },
+                'circ.hold_stalling.soft' : {
+                    label : '&staff.server.admin.org_settings.circ.hold_stalling.soft;',
+                    desc : '&staff.server.admin.org_settings.circ.hold_stalling.soft.desc;',
+                },
+                'circ.hold_boundary.hard' : {
+                    label : '&staff.server.admin.org_settings.circ.hold_boundary.hard;',
+                    type : 'number'
+                },
+                'circ.hold_boundary.soft' : {
+                    label : '&staff.server.admin.org_settings.circ.hold_boundary.soft;',
+                    type : 'number'
+                },
+                'opac.barcode_regex' : {
+                    label : '&staff.server.admin.org_settings.opac.barcode_regex;',
+                    desc : '&staff.server.admin.org_settings.opac.barcode_regex.desc;'
+                },
+                'global.password_regex' : {
+                    label : '&staff.server.admin.org_settings.global.password_regex;',
+                    desc : '&staff.server.admin.org_settings.global.password_regex.desc;'
+                },
+                'circ.item_checkout_history.max' : {
+                    label : '&staff.server.admin.org_settings.circ.item_checkout_history.max;',
+                    desc : '&staff.server.admin.org_settings.circ.item_checkout_history.max.desc;'
+                },
+                'circ.reshelving_complete.interval' : {
+                    label : '&staff.server.admin.org_settings.circ.reshelving_complete.interval;',
+                    desc : '&staff.server.admin.org_settings.circ.reshelving_complete.interval.desc;',
+                    noInherit : true
+                },
+                'circ.hold_estimate_wait_interval' : {
+                    label : '&staff.server.admin.org_settings.circ.hold_estimate_wait_interval;',
+                    desc : '&staff.server.admin.org_settings.circ.hold_estimate_wait_interval.desc;',
+                    type : 'number'
+                },
+                'circ.block_renews_for_holds' : {
+                    label : '&staff.server.admin.org_settings.circ.block_renews_for_holds;',
+                    desc : '&staff.server.admin.org_settings.circ.block_renews_for_holds.desc;',
+                    type : 'bool'
+                },
+                'circ.selfcheck.patron_login_timeout' : {
+                    label : '&staff.server.admin.org_settings.circ.selfcheck.patron_login_timeout;',
+                    desc : '&staff.server.admin.org_settings.circ.selfcheck.patron_login_timeout.desc;',
+                    type : 'number'
+                },
+                'circ.selfcheck.alert_on_checkout_event' : {
+                    label : '&staff.server.admin.org_settings.circ.selfcheck.alert_on_checkout_event;',
+                    desc : '&staff.server.admin.org_settings.circ.selfcheck.alert_on_checkout_event.desc;',
+                    type : 'bool'
+                },
+                'circ.selfcheck.require_patron_password' : {
+                    label : '&staff.server.admin.org_settings.circ.selfcheck.require_patron_password;',
+                    desc : '&staff.server.admin.org_settings.circ.selfcheck.require_patron_password.desc;',
+                    type : 'bool'
+                },
+                'global.juvenile_age_threshold' : {
+                    label : '&staff.server.admin.org_settings.global.juvenile_age_threshold;',
+                    desc : '&staff.server.admin.org_settings.global.juvenile_age_threshold.desc;',
+                },
+                'cat.bib.keep_on_empty' : {
+                    label : '&staff.server.admin.org_settings.cat.bib.keep_on_empty;',
+                    desc : '&staff.server.admin.org_settings.cat.bib.keep_on_empty.desc;',
+                    type : 'bool'
+                },
+                'cat.bib.alert_on_empty' : {
+                    label : '&staff.server.admin.org_settings.cat.bib.alert_on_empty;',
+                    desc : '&staff.server.admin.org_settings.cat.bib.alert_on_empty.desc;',
+                    type : 'bool'
+                },
+                'patron.password.use_phone' : {
+                    label : '&staff.server.admin.org_settings.patron.password.use_phone;',
+                    desc : '&staff.server.admin.org_settings.patron.password.use_phone.desc;',
+                    type : 'bool'
+                },
+                'circ.password_reset_request_time_to_live': {
+                    label: '&staff.server.admin.org_settings.circ.password_reset_request_time_to_live;',
+                    desc: '&staff.server.admin.org_settings.circ.password_reset_request_time_to_live.desc;',
+                    type : 'integer'
+                },
+                'circ.password_reset_request_per_user_limit': {
+                    label: '&staff.server.admin.org_settings.circ.password_reset_request_per_user_limit;',
+                    desc: '&staff.server.admin.org_settings.circ.password_reset_request_per_user_limit.desc;',
+                    type : 'integer'
+                },
+                'circ.password_reset_request_throttle': {
+                    label: '&staff.server.admin.org_settings.circ.password_reset_request_throttle;',
+                    desc: '&staff.server.admin.org_settings.circ.password_reset_request_throttle.desc;',
+                    type : 'integer'
+                },
+                'circ.booking_reservation.default_elbow_room': {
+                    label: '&staff.server.admin.org_settings.circ.booking_reservation.default_elbow_room;',
+                    desc: '&staff.server.admin.org_settings.circ.booking_reservation.default_elbow_room.desc;'
+                },
+                'ui.circ.patron_summary.horizontal' : {
+                    label : '&ui.circ.patron_summary.horizontal;',
+                    desc : '&ui.circ.patron_summary.horizontal.desc;',
+                    type : 'bool'
+                },
+                'ui.circ.in_house_use.entry_cap' : {
+                    label : '&ui.circ.in_house_use.entry_cap;',
+                    desc : '&ui.circ.in_house_use.entry_cap.desc;',
+                    type : 'integer'
+                },
+                'ui.circ.in_house_use.entry_warn' : {
+                    label : '&ui.circ.in_house_use.entry_warn;',
+                    desc : '&ui.circ.in_house_use.entry_warn.desc;',
+                    type : 'integer'
+                },
+                'ui.general.button_bar' : {
+                    label : '&ui.general.button_bar;',
+                    desc : '&ui.general.button_bar.desc;',
+                    type : 'bool'
+                },
+                'ui.network.progress_meter' : {
+                    label : '&ui.network.progress_meter;',
+                    desc : '&ui.network.progress_meter.desc;',
+                    type : 'bool'
+                },
+                'circ.charge_on_damaged' : {
+                    label : '&staff.server.admin.org_settings.circ.charge_on_damaged;',
+                    desc : '&staff.server.admin.org_settings.circ.charge_on_damaged.desc;',
+                    type : 'bool'
+                },
+                'circ.damaged_item_processing_fee' : {
+                    label : '&staff.server.admin.org_settings.circ.damaged_item_processing_fee;',
+                    desc : '&staff.server.admin.org_settings.circ.damaged_item_processing_fee.desc;',
+                },
+
+                'circ.void_lost_on_checkin' : {
+                    label : '&staff.server.admin.org_settings.circ.void_lost_on_checkin;',
+                    desc : '&staff.server.admin.org_settings.circ.void_lost_on_checkin.desc;',
+                    type : 'bool'
+                },
+                'circ.max_accept_return_of_lost' : {
+                    label : '&staff.server.admin.org_settings.circ.max_accept_return_of_lost;',
+                    desc : '&staff.server.admin.org_settings.circ.max_accept_return_of_lost.desc;',
+                },
+                'circ.void_lost_proc_fee_on_checkin' : {
+                    label : '&staff.server.admin.org_settings.circ.void_lost_proc_fee_on_checkin;',
+                    desc : '&staff.server.admin.org_settings.circ.void_lost_proc_fee_on_checkin.desc;',
+                    type : 'bool'
+                },
+                'circ.restore_overdue_on_lost_return' : {
+                    label : '&staff.server.admin.org_settings.circ.restore_overdue_on_lost_return;',
+                    desc : '&staff.server.admin.org_settings.circ.restore_overdue_on_lost_return.desc;',
+                    type : 'bool'
+                },
+                'circ.lost_immediately_available' : {
+                    label : '&staff.server.admin.org_settings.circ.lost_immediately_available;',
+                    desc : '&staff.server.admin.org_settings.circ.lost_immediately_available.desc;',
+                    type : 'bool'
+                },
+                'opac.allow_pending_address' : {
+                    label : '&staff.server.admin.org_settings.opac.allow_pending_address;',
+                    desc : '&staff.server.admin.org_settings.opac.allow_pending_address.desc;',
+                    type : 'bool'
+                },
+                'opac.org_unit_hiding.depth' : {
+                    label : '&staff.server.admin.org_settings.opac.org_unit_hiding.depth;',
+                    desc : '&staff.server.admin.org_settings.opac.org_unit_hiding.depth.desc;',
+                    type : 'integer'
+                },
+                'circ.holds_fifo' : {
+                    label : 'Holds: FIFO',
+                    desc : 'Force holds to a more strict First-In, First-Out capture',
+                    type : 'bool'
+                },
+                /*
+                'ui.circ.show_billing_tab_on_bills' : {
+                    label : '&staff.server.admin.org_settings.ui.circ.show_billing_tab_on_bills;',
+                    desc : '&staff.server.admin.org_settings.ui.circ.show_billing_tab_on_bills.desc;',
+                    type : 'bool'
+                },
+                'ui.circ.patron_display_timeout_interval' : {
+                    label : '&staff.server.admin.org_settings.ui.circ.patron_display_timeout_interval;',
+                    desc : '&staff.server.admin.org_settings.ui.circ.patron_display_timeout_interval.desc;',
+                },
+                */
+                'lib.courier_code' : {
+                    label : '&staff.server.admin.org_settings.lib.courier_code;',
+                    desc : '&staff.server.admin.org_settings.lib.courier_code.desc;',
+                }
+            };
+        </script>
+    </head>
+    <body class="tundra tall">
+        <div dojoType="dijit.layout.LayoutContainer" orientation="vertical" class="tall">
+            <div dojoType="dijit.layout.ContentPane" layoutAlign='top'>
+                <h1>&staff.server.admin.org_unit_settings.title;</h1><br/>
+                <span>&staff.server.admin.org_unit_settings.context;</span>
+                <span>
+                    <select dojoType="openils.widget.OrgUnitFilteringSelect" jsId='osContextSelector'
+                        searchAttr="shortname" autocomplete="true" labelAttr='shortname' onchange='osChangeContext();'> 
+                    </select>
+                </span>
+                <span>&staff.server.admin.org_unit_settings.uninherited;</span>
+            </div>
+            <div dojoType="dijit.layout.ContentPane" layoutAlign='client' class='tall'>
+                <script>
+                    var osGridLayout = [{
+                        defaultCell: {styles: 'text-align: center;'},
+                        cells : [[
+                            {   name: 'Edit', 
+                                value: '&lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;osLaunchEditor(\'SETTING\');&quot;>Edit&lt;/a>',
+                                get: osGetEditLink, 
+                                formatter : osFormatEditLink
+                            },
+                            {name: 'Setting', get: osGetGridData, field:'label', width:'auto', styles:'text-align:left;'},
+                            {name: 'Context', get: osGetGridData, field:'context'},
+                            {name: 'Value', get: osGetGridData, field:'value', width:'auto'},
+                        ]]
+                    }];
+                </script>
+                <div dojoType='dojox.Grid' jsId='osGrid'> </div>
+            </div>
+        </div>
+
+        <!-- edit dialog -->
+        <div dojoType="dijit.Dialog" jsId='osEditDialog' title="&staff.server.admin.org_unit_settings.edit_setting;">
+            <table class='form_table'>
+                <thead>
+                    <tr><td colspan='2' align='center'><div id='os-edit-name'/></td></tr>
+                    <tr><td colspan='2' align='center'><div id='os-edit-desc' style='max-width:600px;'/></td></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Context</td>
+                        <td> 
+                            <select dojoType="openils.widget.OrgUnitFilteringSelect" jsId='osEditContextSelector'
+                                searchAttr="shortname" autocomplete="true" labelAttr='shortname'> 
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Value</td>
+                        <td>
+                            <input dojoType='dijit.form.TextBox' jsId='osEditTextBox'/>
+                            <input dojoType='dijit.form.CurrencyTextBox' jsId='osEditCurrencyTextBox'/>
+                            <input dojoType='dijit.form.NumberTextBox' jsId='osEditNumberTextBox'/>
+                            <select dojoType='dijit.form.FilteringSelect' jsId='osEditBoolSelect'>
+                                <option value='true'>&common.true;</option>
+                                <option value='false'>&common.false;</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <button dojoType='dijit.form.Button' onclick='osEditSetting(true);'>&staff.server.admin.org_unit_settings.delete_setting;</button>
+                        </td>
+                        <td> 
+                            <button dojoType='dijit.form.Button' onclick='osEditSetting();'>&staff.server.admin.org_unit_settings.update_setting;</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> <!-- edit dialog -->
+        <span id='os-true' class='hidden'>&common.true;</span>
+        <span id='os-false' class='hidden'>&common.false;</span>
+    </body>
+</html>
+

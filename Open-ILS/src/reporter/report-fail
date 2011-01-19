@@ -1,0 +1,18 @@
+To: {TO}
+From: {FROM}
+Reply-To: {REPLY_TO}
+Subject: Report failed: "{REPORT_NAME}" 
+
+Your report, named [{REPORT_NAME}], scheduled to run at {RUN_TIME},
+has failed with the following error message:
+
+ {ERROR_TEXT}
+
+The SQL command attempted was:
+
+ {SQL}
+
+If you are unsure of the meaning of this message, please contact your
+ILS adminstrator or support staff and give them both the error message
+and the SQL command.
+

@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ils_events>
+            <event code='1208' textcode='TITLE_LAST_COPY'>
+        <desc xml:lang='hy-AM'>Այս վերնագրին կցված վերջին օրինակը հեռացվում կամ ջնջվում է:</desc>
+    </event>
+    <event code='1598' textcode='MONEY_USER_CIRCULATION_SUMMARY_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող money_user_circulation_summary չի գտնված</desc>
+    </event>
+    <event code='1621' textcode='CONTAINER_COPY_BUCKET_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող container_copy_bucket չի գտնված</desc>
+    </event>
+    <event code='1218' textcode='ITEM_AGE_PROTECTED'>
+        <desc xml:lang='hy-AM'>Նյութը չափից դուրս նոր է որպեսզի այն պատվիրեն:</desc>
+    </event>
+    <event code='1214' textcode='PATRON_DUP_IDENT1'>
+        <desc xml:lang='hy-AM'>Ընտրված սկզբնական բնոթագրման տեսակը և արժեքը օգտագործվում են մեկ ուրիշի կողմից:</desc>
+    </event>
+    <event code='1561' textcode='PERMISSION_PERM_LIST_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող permission_perm_list չի գտնված:</desc>
+    </event>
+    <event code='1213' textcode='PATRON_BARRED'>
+        <desc xml:lang='hy-AM'>Ընթերցողը կասեցված է:</desc>
+    </event>
+    <event code='1645' textcode='CONFIG_CIRC_MATRIX_TEST_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Առաջարկվող config_circ_matrix_test չի գտնվել</desc>
+    </event>
+    <event code='7004' textcode='COPY_NOT_AVAILABLE'>
+        <desc xml:lang='hy-AM'> Օրինակը մատչելի չէ </desc>
+    </event>
+    <event code='1591' textcode='METABIB_SERIES_FIELD_ENTRY_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող metabib_series_field_entry չի գտնված:</desc>
+    </event>
+    <event code='7027' textcode='PATRON_PASSWORD_WAS_NOT_STRONG'>
+        <desc xml:lang='hy-AM'>The user attempted to set their password to a weak value.</desc>
+    </event>
+    <event code='1649' textcode='VANDELAY_IMPORT_ITEM_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Առաջարկվող vandelay.import_item չի գտնվել</desc>
+    </event>
+    <event code='1639' textcode='REPORTER_SCHEDULE_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող reporter_schedule չի գտնված</desc>
+    </event>
+    <event code='1847' textcode='ACQ_FUNDING_SOURCE_DEDIT_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Առաջարկվող acq.funding_source_dedit չի գտնվել</desc>
+    </event>
+    <event code='1641' textcode='ACTION_OPEN_CIRC_COUNT_BY_CIRC_MOD_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող action_open_circ_count_by_circ_mod չի գտնված</desc>
+    </event>
+    <event code='1609' textcode='CONFIG_RULES_RECURING_FINE_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Պահանջվող config_rules_recurring_fine չի գտնված</desc>
+    </event>
+    <event code='1608' textcode='METABIB_SUBJECT_FIELD_ENTRY_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող metabib_subject_field_entry չի գտնված</desc>
+    </event>
+    <event code='1711' textcode='BIB_QUEUE_EXISTS'>
+        <desc xml:lang='hy-AM'>Նույն անվանումով մատենագիտական գրառման հերթ արդեն կա</desc>
+    </event>
+    <event code='1875' textcode='ACQ_LINEITEM_GENERATED_ATTR_DEFINITION_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Առաջարկվող acq_lineitem_attr  չի գտնված</desc>
+    </event>
+    <event code='1876' textcode='ACQ_LINEITEM_LOCAL_ATTR_DEFINITION_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Առաջարկվող acq_lineitem_attr  չի գտնված</desc>
+    </event>
+    <event code='1877' textcode='ACQ_LINEITEM_MARC_ATTR_DEFINITION_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Առաջարկվող acq_lineitem_attr  չի գտնված</desc>
+    </event>
+    <event code='1878' textcode='ACQ_LINEITEM_USR_ATTR_DEFINITION_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Առաջարկվող acq_lineitem_attr  չի գտնված</desc>
+    </event>
+    <event code='1879' textcode='ACQ_LINEITEM_PROVIDER_ATTR_DEFINITION_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Առաջարկվող acq_lineitem_attr  չի գտնված</desc>
+    </event>
+    <event code='1207' textcode='REFUND_EXCEEDS_BALANCE'>
+        <desc xml:lang='hy-AM'>Տրվել է ավելի մէծ վերադարձի գումար քան տրանզակցիայի բացասական գումարն է:</desc>
+    </event>
+    <event code='1504' textcode='ACTION_TRANSIT_COPY_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>
+			Ինչ որ մեկը փորձում է կանչել պատկերը 
+			համակարգից և պատկերը չի գտնված:
+		</desc>
+    </event>
+    <event code='1538' textcode='ACTION_SURVEY_RESPONSE_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող action_survey_response չի գտնված</desc>
+    </event>
+    <event code='1555' textcode='MONEY_OPEN_BILLABLE_TRANSACTION_SUMMARY_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող money_open_billable_transaction_summary չի գտնված</desc>
+    </event>
+    <event code='7000' textcode='ROUTE_ITEM'>
+        <desc xml:lang='hy-AM'> 
+			Օրինակը հարկ է ուղարկել այլ ուղղությամբ	
+			Նպատակակետը կսահմանվի  'org' բանալիով
+			իրադարձության ոբյեկտի ներսում
+		</desc>
+    </event>
+    <event code='1554' textcode='CONFIG_RULES_CIRC_DURATION_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող config_rules_circ_duration չի գտնված</desc>
+    </event>
+    <event code='1607' textcode='ACTION_OPEN_CIRCULATION_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող action_open_circulationչի գտնված</desc>
+    </event>
+    <event code='1559' textcode='METABIB_FULL_REC_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող metabib_full_rec չի գտնված</desc>
+    </event>
+    <event code='1527' textcode='OPEN_TCN_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Չի գտնվում TCN որը առկա գրառումների հետ collide չի լինում</desc>
+    </event>
+    <event code='7016' textcode='ITEM_ON_HOLDS_SHELF'>
+        <desc xml:lang='hy-AM'>Պահանջվող նյութը գտնվում է պահումների ցուցակում</desc>
+    </event>
+    <event code='2001' textcode='DATABASE_UPDATE_FAILED'>
+        <desc xml:lang='hy-AM'>Փորձը գրելու բազայում ձախոխվեց</desc>
+    </event>
+    <event code='1563' textcode='METABIB_KEYWORD_FIELD_ENTRY_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող metabib_keyword_field_entry չի գտնվել</desc>
+    </event>
+    <event code='1546' textcode='CONFIG_AUDIENCE_MAP_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող config_audience_map չի գտնվել</desc>
+    </event>
+    <event code='8004' textcode='OFFLINE_CONFIG_ERROR'>
+        <desc xml:lang='hy-AM'> Ոֆլայն կայանը ճիշտ չի կարգաբերված </desc>
+    </event>
+    <event code='8005' textcode='OFFLINE_CHECKSUM_FAILED'>
+        <desc xml:lang='hy-AM'> Ոֆլայն կայանը ճիշտ չի կարգաբերված </desc>
+    </event>
+    <event code='8006' textcode='OFFLINE_SESSION_NOT_FOUND'>
+        <desc xml:lang='hy-AM'> Ոֆլայն կայանը ճիշտ չի կարգաբերված </desc>
+    </event>
+    <event code='1001' textcode='NO_SESSION'>
+        <desc xml:lang='hy-AM'>Օգտվողի կապի սեսիան կամ ժամկետանց է կամ գոյություն չունի</desc>
+    </event>
+    <event code='1880' textcode='CONFIG_BILLING_TYPE_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Առաջարկվող config_billing_type չի գտնված</desc>
+    </event>
+    <event code='1700' textcode='NON_CAT_TYPE_EXISTS'>
+        <desc xml:lang='hy-AM'> Չմուտքագրվող դասի պատկեր արդեն աօկա է </desc>
+    </event>
+    <event code='1529' textcode='ACTOR_WORKSTATION_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող actor_workstation չի գտնված</desc>
+    </event>
+    <event code='1227' textcode='COPY_DELETE_WARNING'>
+        <desc xml:lang='hy-AM'>Ջնջելու համար պատճեն չի գտնվում նորմալ վիչակում</desc>
+    </event>
+    <event code='1204' textcode='CIRC_BAD_STATUS'>
+        <desc xml:lang='hy-AM'>
+			Տրված սպասարկումը ստանդարտ վիճակում չէ կամ
+			սպասարկւոմը նորմալ չի ավարտվել
+		</desc>
+    </event>
+    <event code='1855' textcode='ACQ_FUNDING_SOURCE_CREDIT_TOTAL_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Պահանջվող acq.funding_source_credit_total չի գտնված</desc>
+    </event>
+    <event code='1870' textcode='ACQ_LINEITEM_DETAIL_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Պահանջվող acq.lineitem_detail չի գտնված</desc>
+    </event>
+    <event code='1223' textcode='PATRON_NO_PHONE'>
+        <desc xml:lang='hy-AM'>Օգտվողը չունի նշված հեռախոս</desc>
+    </event>
+    <event code='1002' textcode='ACTOR_USER_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Ինչ որ մեկը փորձեց կանչել համակարգի օգտվողին ն օգտվողը չի գտնվել</desc>
+    </event>
+    <event code='7007' textcode='COPY_NEEDED_FOR_HOLD'>
+        <desc xml:lang='hy-AM'> Օրինակը հարկ է լրացնել պահման մեջ </desc>
+    </event>
+    <event code='7010' textcode='COPY_ALERT_MESSAGE'>
+        <desc xml:lang='hy-AM'> Պատվիրված օրինակը կցված հաղորդագրություն ունի </desc>
+    </event>
+    <event code='1643' textcode='VANDELAY_BIB_QUEUE_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Պահանջվող vandelay_bib_queue չի գտնված</desc>
+    </event>
+    <event code='1849' textcode='ACQ_FUND_DEBIT_TOTAL_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Պահանջվող acq.fund_debit_total չի գտնված</desc>
+    </event>
+    <event code='1636' textcode='REPORTER_OUTPUT_FOLDER_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող reporter_output_folder չի գտնված</desc>
+    </event>
+    <event code='7008' textcode='MAX_RENEWALS_REACHED'>
+        <desc xml:lang='hy-AM'> Սպասարկման մոդուլւոմ սպասող թարմացումներ էլ չկան </desc>
+    </event>
+    <event code='1217' textcode='PATRON_INACTIVE'>
+        <desc xml:lang='hy-AM'>Հաշիվը նշված է որպես ոչ ակտիվ</desc>
+    </event>
+    <event code='8003' textcode='OFFLINE_PARAM_ERROR'>
+        <desc xml:lang='hy-AM'> Օֆլայն բեռնավորման մեջ առկա են պակասող պարամետրեր </desc>
+    </event>
+    <event code='1637' textcode='REPORTER_REPORT_FOLDER_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող reporter_report_folder չի գտնված</desc>
+    </event>
+    <event code='1545' textcode='PERM_EX_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող perm_ex չի գտնված</desc>
+    </event>
+    <event code='1553' textcode='ACTOR_ORG_UNIT_CLOSED_DATE_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող actor_org_unit_closed_date չի գտնված</desc>
+    </event>
+    <event code='1848' textcode='ACQ_FUND_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Պահանջվող acq.fund չի գտնվել</desc>
+    </event>
+    <event code='1541' textcode='AUTHORITY_RECORD_DESCRIPTOR_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող authority_record_descriptor չի գտնված</desc>
+    </event>
+    <event code='7011' textcode='COPY_STATUS_LOST'>
+        <desc xml:lang='hy-AM'>Օրինակը նշված է որպես կորած</desc>
+    </event>
+    <event code='1851' textcode='ACQ_FUND_ENCUMBRANCE_TOTAL_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Պահանջվող acq.fund_encumbrance_total չի գտնված</desc>
+    </event>
+    <event code='1587' textcode='CONTAINER_CALL_NUMBER_BUCKET_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող container_call_number_bucket չի գտնված</desc>
+    </event>
+    <event code='1229' textcode='VOLUME_DELETED'>
+        <desc xml:lang='hy-AM'>Հարցվող հատորը նշված է որպես ջնջված</desc>
+    </event>
+    <event code='1635' textcode='REPORTER_REPORT_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող reporter_report չի գտնված</desc>
+    </event>
+    <event code='1631' textcode='MONEY_COLLECTIONS_TRACKER_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող money_collections_tracker չի գտնված</desc>
+    </event>
+    <event code='1632' textcode='CONFIG_RULES_AGE_HOLD_PROTECT_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող money_collections_tracker չի գտնված</desc>
+    </event>
+    <event code='1633' textcode='MONEY_DESK_PAYMENT_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող money_collections_tracker չի գտնված</desc>
+    </event>
+    <event code='1651' textcode='AUTHORITY_RECORD_NUMBER_EXISTS'>
+        <desc xml:lang='hy-AM'>An authority record already exists with the requested ARN</desc>
+    </event>
+    <event code='5000' textcode='PERM_FAILURE'>
+        <desc xml:lang='hy-AM'>Արտոնություն չկա</desc>
+    </event>
+    <event code='7015' textcode='NEGATIVE_PATRON_BALANCE'>
+        <desc xml:lang='hy-AM'>Հարցվող գործողության արդյունքում ընթերցողը կունենա բացասական բալանսը</desc>
+    </event>
+    <event code='1569' textcode='ACTOR_USER_STANDING_PENALTY_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող actor_user_standing_penalty չի գտնված</desc>
+    </event>
+    <event code='8000' textcode='OFFLINE_SESSION_ACTIVE'>
+        <desc xml:lang='hy-AM'> Օֆլայն սեսիան այս տեղաբաշխման համար մշակվում է </desc>
+    </event>
+    <event code='1200' textcode='USERNAME_EXISTS'>
+        <desc xml:lang='hy-AM'>Տրված օգտվողի անունը արդեն կա</desc>
+    </event>
+    <event code='1602' textcode='ACTOR_STAT_CAT_ENTRY_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող actor_stat_cat_entry չի գտնված</desc>
+    </event>
+    <event code='1710' textcode='CONTAINER_EXISTS'>
+        <desc xml:lang='hy-AM'>Օգտվողը արդեն ստեղծել է փունջ հարցվող անվանումով</desc>
+    </event>
+    <event code='7001' textcode='PATRON_BAD_STANDING'>
+        <desc xml:lang='hy-AM'>
+			Հարցվող ընթերցողը չի կարողանում ստանալ նյութը, քանի որ
+			իր հաշիվը վատ վիճակում է:
+		</desc>
+    </event>
+    <event code='1525' textcode='BILLING_NOT_FOUND'>
+        <desc xml:lang='hy-AM'> Հարցվող վճարի նշպւմը գոյություն չունի </desc>
+    </event>
+    <event code='1575' textcode='CONTAINER_BIBLIO_RECORD_ENTRY_BUCKET_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող container_biblio_record_entry_bucket չի գտնված</desc>
+    </event>
+    <event code='7021' textcode='RESERVATION_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Booking reservation not found</desc>
+    </event>
+    <event code='7025' textcode='PATRON_TOO_MANY_ACTIVE_PASSWORD_RESET_REQUESTS'>
+        <desc xml:lang='hy-AM'>There are too many active password reset request sessions for this patron.</desc>
+    </event>
+    <event code='10004' textcode='ACQ_LINEITEM_NO_PRICE'>
+        <desc xml:lang='hy-AM'>Տողի նյութը չունի գին</desc>
+    </event>
+    <event code='10005' textcode='ACQ_LINEITEM_NO_PROVIDER'>
+        <desc xml:lang='hy-AM'>Տողի նյութը չունի գին</desc>
+    </event>
+    <event code='1226' textcode='REFUND_EXCEEDS_DESK_PAYMENTS'>
+        <desc xml:lang='hy-AM'>
+			Վերաֆինանսավորման այս արժեխը թույլատրված չէ, քանի որ այն գերազանցում է 
+			այս տրանզակցիայի համար հատկացված ընդհանուր գումարին:
+		</desc>
+    </event>
+    <event code='1619' textcode='ACTOR_STAT_CAT_ENTRY_USER_MAP_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող actor_stat_cat_entry_user_map չի գտնված</desc>
+    </event>
+    <event code='1858' textcode='ACQ_LINEITEM_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Պահանջվող acq.po_lineitem չի գտնված</desc>
+    </event>
+    <event code='1558' textcode='ASSET_COPY_NOTE_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող asset_copy_note չի գտնված</desc>
+    </event>
+    <event code='1853' textcode='ACQ_FUND_COMBINED_BALANCE_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Պահանջվող requested acq.fund_combined_balance չի գտնված</desc>
+    </event>
+    <event code='1850' textcode='ACQ_FUND_ALLOCATION_TOTAL_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Պահանջվող acq.fund_allocation_total չի գտնվել</desc>
+    </event>
+    <event code='1616' textcode='MONEY_OPEN_USER_CIRCULATION_SUMMARY_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող money_open_user_circulation_summary չի գտնված</desc>
+    </event>
+    <event code='1624' textcode='MONEY_PAYMENT_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող money_payment չի գտնված</desc>
+    </event>
+    <event code='1596' textcode='ACTOR_ORG_UNIT_TYPE_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող actor_org_unit_type չի գտնված</desc>
+    </event>
+    <event code='1004' textcode='Z3950_BAD_QUERY'>
+        <desc xml:lang='hy-AM'>Z հերթը ճիշտ չէ կազմված</desc>
+    </event>
+    <event code='1205' textcode='CARD_EXISTS'>
+        <desc xml:lang='hy-AM'>Օգտվողի տրված շտրիխ կոդը գոյություն ունի</desc>
+    </event>
+    <event code='1713' textcode='SURVEY_RESPONSES_EXIST'>
+        <desc xml:lang='hy-AM'>Այս հարցախույզի համար առկա են պատասխաններ</desc>
+    </event>
+    <event code='1544' textcode='CONFIG_METABIB_FIELD_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող config_metabib_field չի գտնված</desc>
+    </event>
+    <event code='1584' textcode='ACTOR_ORG_ADDRESS_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող actor_org_address չի գտնված</desc>
+    </event>
+    <event code='1501' textcode='BIBLIO_RECORD_ENTRY_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող biblio_record_entry չի գտնված</desc>
+    </event>
+    <event code='1852' textcode='ACQ_FUND_SPENT_TOTAL_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Պահանջվող acq.fund_spent_total չի գտնվել</desc>
+    </event>
+    <event code='1613' textcode='PERMISSION_GRP_TREE_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող permission_grp_tree չի գտնված</desc>
+    </event>
+    <event code='10001' textcode='ACQ_LINEITEM_NO_COPIES'>
+        <desc xml:lang='hy-AM'>Տողի նյութը չունի կցվածօրինակներ</desc>
+    </event>
+    <event code='1536' textcode='ACTION_IN_HOUSE_USE_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող action_in_house_use չի գտնված</desc>
+    </event>
+    <event code='1872' textcode='ACQ_LINEITEM_PROVIDER_ATTR_DEFINITION_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Պահանջվող acq.lineitem_provider_attr_definition չի գտնվել</desc>
+    </event>
+    <event code='1562' textcode='METABIB_METARECORD_SOURCE_MAP_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող metabib_metarecord_source_map չի գտնված</desc>
+    </event>
+    <event code='1531' textcode='ACTION_SURVEY_QUESTION_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող action_survey_question չի գտնվա</desc>
+    </event>
+    <event code='1612' textcode='CONFIG_RULES_MAX_FINE_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող config_rules_max_fine չի գտնված</desc>
+    </event>
+    <event code='1557' textcode='ACTOR_ORG_UNIT_SETTING_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող actor_org_unit_setting չի գտնված</desc>
+    </event>
+    <event code='1629' textcode='PERMISSION_USR_GRP_MAP_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող permission_usr_grp_map չի գտնված</desc>
+    </event>
+    <event code='1215' textcode='CIRC_EXCEEDS_COPY_RANGE'>
+        <desc xml:lang='hy-AM'>
+			Ընտրված օրինակը չի կարող սպասարկվել, քանի որ ընթերցողի տան տեղաբաշխումը 
+			սպասարկման տիրույթից դուրս է:
+		</desc>
+    </event>
+    <event code='1606' textcode='MONEY_WORK_PAYMENT_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող money_work_payment չի գտնված</desc>
+    </event>
+    <event code='2000' textcode='BAD_PARAMS'>
+        <desc xml:lang='hy-AM'>Մեթոդում գտնվել են սխալ պարամետրեր</desc>
+    </event>
+    <event code='1564' textcode='MONEY_CASH_PAYMENT_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող money_cash_payment չի գնված</desc>
+    </event>
+    <event code='1221' textcode='ORG_CANNOT_HAVE_VOLS'>
+        <desc xml:lang='hy-AM'>Ընտրված տեղաբաշխումը չի կարող ունենալ կցված հատորներ</desc>
+    </event>
+    <event code='1704' textcode='TCN_EXISTS'>
+        <desc xml:lang='hy-AM'>Պահանջվող TCN արժեքով գրառում արդեն առկա է</desc>
+    </event>
+    <event code='1' textcode='UNKNOWN'>
+        <desc xml:lang='hy-AM'>Իրադարձություն: Օգտագործվում է միայն նախագծման համար</desc>
+    </event>
+    <event code='1622' textcode='BIBLIO_RECORD_NODE_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող biblio_record_node չի գտնված</desc>
+    </event>
+    <event code='1534' textcode='ACTOR_USER_SETTING_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող actor_user_setting չի գտնված</desc>
+    </event>
+    <event code='1211' textcode='BILL_ALREADY_VOIDED'>
+        <desc xml:lang='hy-AM'>Ընտրված հաշիվը արդեն հեռացվել է</desc>
+    </event>
+    <event code='7026' textcode='PATRON_NOT_AN_ACTIVE_PASSWORD_RESET_REQUEST'>
+        <desc xml:lang='hy-AM'>The user attempted to update their password using a stale or inactive password reset request session.</desc>
+    </event>
+    <event code='1222' textcode='PATRON_NO_EMAIL_ADDRESS'>
+        <desc xml:lang='hy-AM'>Օգտվողը չունի հավաստի էլ փոստ հասցե</desc>
+    </event>
+    <event code='1854' textcode='ACQ_FUND_SPENT_BALANCE_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Պահանջվող acq.fund_spent_balance չի գտնվել</desc>
+    </event>
+    <event code='1523' textcode='TITLE_NOTE_NOT_FOUND'>
+        <desc xml:lang='hy-AM'> Պահանջվող վերնագրի նշումը առկա չէ </desc>
+    </event>
+    <event code='1605' textcode='CONFIG_LIT_FORM_MAP_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող config_lit_form_map չի գտնված</desc>
+    </event>
+    <event code='1567' textcode='METABIB_RECORD_DESCRIPTOR_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող metabib_record_descriptor չի գտնված</desc>
+    </event>
+    <event code='9000' textcode='REPORT_TEMPLATE_EXISTS'>
+        <desc xml:lang='hy-AM'> Հաշվետվության ձևաչափը տրված անվանմամբ և թղթապանակով գոյություն ունի</desc>
+    </event>
+    <event code='1500' textcode='ACTION_CIRCULATION_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>
+			Ինչ որ մեկը փորձում է կանչել սպասարկման պատկերը 
+			համակարգից և պատկերը չի գտնված:
+		</desc>
+    </event>
+    <event code='7009' textcode='CIRC_CLAIMS_RETURNED'>
+        <desc xml:lang='hy-AM'> Պահանջվող տածքը նշված է պարտքի վերադարձ </desc>
+    </event>
+    <event code='1630' textcode='ACTOR_USER_NOTE_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող actor_user_note չի գտնված</desc>
+    </event>
+    <event code='7005' textcode='LOCATION_CIRC_NOT_ALLOWED'>
+        <desc xml:lang='hy-AM'> Տեղաբաշխումը թույլ չի տալիս նյութը սպասարկել </desc>
+    </event>
+    <event code='1508' textcode='ASSET_CALL_NUMBER_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող asset_call_number չի գտնված</desc>
+    </event>
+    <event code='1209' textcode='Z3950_LOGIN_FAILED'>
+        <desc xml:lang='hy-AM'>Գրանցումը ձախողվեց</desc>
+    </event>
+    <event code='1543' textcode='MONEY_CREDIT_CARD_PAYMENT_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող money_credit_card_payment չի գտնված</desc>
+    </event>
+    <event code='7023' textcode='RESERVATION_BAD_PARAMS'>
+        <desc xml:lang='hy-AM'>Provided parameters describe unacceptable reservation.</desc>
+    </event>
+    <event code='1857' textcode='ACQ_FUNDING_SOURCE_BALANCE_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Պահանջվող acq.funding_source_balance չի գտնվել</desc>
+    </event>
+    <event code='10000' textcode='ACQ_LINEITEM_APPROVED'>
+        <desc xml:lang='hy-AM'>Տողի նյութը հնարավոր չէ փոփոխել, քանի որ այն արդեն հաստատված է։</desc>
+    </event>
+    <event code='1614' textcode='ACTION_SURVEY_ANSWER_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող action_survey_answer չի գտնված</desc>
+    </event>
+    <event code='1535' textcode='METABIB_AUTHOR_FIELD_ENTRY_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող metabib_author_field_entry չի գտնված</desc>
+    </event>
+    <event code='1626' textcode='ASSET_STAT_CAT_ENTRY_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող asset_stat_cat_entry չի գտնված</desc>
+    </event>
+    <event code='1595' textcode='CONFIG_NON_CATALOGED_TYPE_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող config_non_cataloged_type չի գտնված</desc>
+    </event>
+    <event code='1225' textcode='TRANSIT_ABORT_NOT_ALLOWED'>
+        <desc xml:lang='hy-AM'>Այս նյութի համար տրանզիտը չի կարող վիժեցվել, ելնելով նյութի վիճակից</desc>
+    </event>
+    <event code='1542' textcode='CONFIG_LANGUAGE_MAP_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող config_language_map չի գտնված</desc>
+    </event>
+    <event code='1844' textcode='ACQ_FUNDING_SOURCE_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Պահանջվող acq.funding_source չի գտնվել</desc>
+    </event>
+    <event code='1206' textcode='VOLUME_NOT_EMPTY'>
+        <desc xml:lang='hy-AM'>Ընտրված հատորը ոնի հավելված օրինակներ</desc>
+    </event>
+    <event code='1540' textcode='AUTHORITY_RECORD_ENTRY_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող authority_record_entry չի գտնված</desc>
+    </event>
+    <event code='1203' textcode='COPY_BAD_STATUS'>
+        <desc xml:lang='hy-AM'>Տրված օրինակը ստանդարտ սպասարկման կարքավիճակում չէ</desc>
+    </event>
+    <event code='1601' textcode='MONEY_BILLABLE_TRANSACTION_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող money_billable_transaction չի գտնված</desc>
+    </event>
+    <event code='1871' textcode='PERMISSION_USR_OBJECT_PERM_MAP_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Պահանջվող permission.usr_object_perm չի գտնվել</desc>
+    </event>
+    <event code='7020' textcode='COPY_RESERVED'>
+        <desc xml:lang='hy-AM'>Item reserved for booking request</desc>
+    </event>
+    <event code='1550' textcode='MONEY_OPEN_USER_SUMMARY_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող money_open_user_summary չի գտնված</desc>
+    </event>
+    <event code='3' textcode='NO_CHANGE'>
+        <desc xml:lang='hy-AM'>Չկա փոփոխություն</desc>
+    </event>
+    <event code='1201' textcode='CIRC_PERMIT_BAD_KEY'>
+        <desc xml:lang='hy-AM'>Դուրս տրման փորձ է արվել առանց իրավասու բանալու</desc>
+    </event>
+    <event code='1593' textcode='MONEY_CREDIT_PAYMENT_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող money_credit_payment չի գտնված</desc>
+    </event>
+    <event code='7017' textcode='ROUTE_TO_COPY_LOCATION'>
+        <desc xml:lang='hy-AM'> 
+		Օրինակը պետք է ուղարկել ըստ պահանջի: Տեղաբաշխումը
+		պետք է սահմանվի համաձայն 'location' բանալու
+		</desc>
+    </event>
+    <event code='1618' textcode='METABIB_TITLE_FIELD_ENTRY_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող metabib_title_field_entry չի գտնված</desc>
+    </event>
+    <event code='7022' textcode='RESERVATION_CAPTURE_FAILED'>
+        <desc xml:lang='hy-AM'>Booking reservation capture failed</desc>
+    </event>
+    <event code='1202' textcode='ITEM_NOT_CATALOGED'>
+        <desc xml:lang='hy-AM'>Հարցվող նյպւթը քարտագրված չէ</desc>
+    </event>
+    <event code='1520' textcode='WORKSTATION_NOT_FOUND'>
+        <desc xml:lang='hy-AM'> Հարցվող աշխատանքային կայանը գոյություն չունի </desc>
+    </event>
+    <event code='1628' textcode='MONEY_BILLING_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող money_billing չի գտնված</desc>
+    </event>
+    <event code='1507' textcode='CONTAINER_ITEM_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>
+			Ինչ որ մեկը փորձում է կանչել կոնտեյների նյութի պատճեն 
+			համակարգից և պատկերը չի գտնված:
+		</desc>
+    </event>
+    <event code='2002' textcode='DATABASE_QUERY_FAILED'>
+        <desc xml:lang='hy-AM'>Բազայում հարցում անելու փորձը տապալվեց</desc>
+    </event>
+    <event code='1549' textcode='CONFIG_STANDING_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող config_standing չի գտնված</desc>
+    </event>
+    <event code='1210' textcode='INCORRECT_PASSWORD'>
+        <desc xml:lang='hy-AM'>Տրված գաղտնաբարը սխալ է</desc>
+    </event>
+    <event code='1582' textcode='CONFIG_ITEM_TYPE_MAP_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող config_item_type_map չի գտնված</desc>
+    </event>
+    <event code='8007' textcode='OFFLINE_SESSION_EXISTS'>
+        <desc xml:lang='hy-AM'> Տրված անունով սէսիա արդեն գոյություն ունի </desc>
+    </event>
+    <event code='1650' textcode='CONFIG_CIRC_MATRIX_RULESET_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Պահանջվող config_circ_matrix_ruleset_not_found չի գտնվել</desc>
+    </event>
+    <event code='10002' textcode='ACQ_LINEITEM_DETAIL_NO_FUND'>
+        <desc xml:lang='hy-AM'>Տողի նյութի մանրամասը չունի իրեն կցված գումար</desc>
+    </event>
+    <event code='7003' textcode='COPY_CIRC_NOT_ALLOWED'>
+        <desc xml:lang='hy-AM'> Թիրախ օրինակը արգելված է սպասարկել </desc>
+    </event>
+    <event code='1530' textcode='CONFIG_IDENTIFICATION_TYPE_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող config_identification_type չի գտնված</desc>
+    </event>
+    <event code='1579' textcode='ASSET_COPY_LOCATION_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող asset_copy_location չի գտնված</desc>
+    </event>
+    <event code='1506' textcode='CONTAINER_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>
+			Ինչ որ մեկը փորձում է կանչել կոնտեյնների պատկերը 
+			համակարգից և պատկերը չի գտնված:
+		</desc>
+    </event>
+    <event code='1571' textcode='ASSET_CALL_NUMBER_NOTE_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող asset_call_number_note չի գտնված</desc>
+    </event>
+    <event code='1528' textcode='ACTOR_USER_ADDRESS_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող հասցեն չի գտնված</desc>
+    </event>
+    <event code='7002' textcode='PATRON_EXCEEDS_CHECKOUT_COUNT'>
+        <desc xml:lang='hy-AM'>Հարցված ընթերցողը ունի առավելաքույն սպասարկված նյութեր</desc>
+    </event>
+    <event code='1003' textcode='Z3950_SEARCH_FAILED'>
+        <desc xml:lang='hy-AM'>Z որոնումը անհաջող էր</desc>
+    </event>
+    <event code='1533' textcode='ACTOR_USR_NOTE_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող actor_usr_note չի գտնված</desc>
+    </event>
+    <event code='1620' textcode='PERMISSION_GRP_PERM_MAP_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող permission_grp_perm_map չի գտնված</desc>
+    </event>
+    <event code='1709' textcode='MAX_HOLDS'>
+        <desc xml:lang='hy-AM'>Օգտվողը հասէլ է պահումների ամենամեծ քանակին</desc>
+    </event>
+    <event code='1706' textcode='ITEM_BARCODE_EXISTS'>
+        <desc xml:lang='hy-AM'>Նույն շտրիխ կոդով նյութ գոյություն ունի</desc>
+    </event>
+    <event code='7014' textcode='COPY_IN_TRANSIT'>
+        <desc xml:lang='hy-AM'>Օրինակը տրանզիտում է</desc>
+    </event>
+    <event code='1219' textcode='COPY_REMOTE_CIRC_LIB'>
+        <desc xml:lang='hy-AM'>Օրինակ հեռու գտնվող (circ_lib) գրադարանից տեսնված է</desc>
+    </event>
+    <event code='1220' textcode='ITEM_NOT_HOLDABLE'>
+        <desc xml:lang='hy-AM'>Օրինակ հեռու գտնվող (circ_lib) գրադարանից տեսնված է</desc>
+    </event>
+    <event code='1702' textcode='OPEN_CIRCULATION_EXISTS'>
+        <desc xml:lang='hy-AM'> Պատվիրված նյութի համար կա բաց սպասարկում </desc>
+    </event>
+    <event code='0' textcode='SUCCESS'>
+        <desc xml:lang='hy-AM'>Success</desc>
+    </event>
+    <event code='1231' textcode='RECORD_NOT_EMPTY'>
+        <desc xml:lang='hy-AM'>Ընտրված մատեն գրառումը ունի կցված հատոր</desc>
+    </event>
+    <event code='1503' textcode='ACTION_HOLD_REQUEST_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող action_hold_request չի գտնված</desc>
+    </event>
+    <event code='1212' textcode='PATRON_EXCEEDS_OVERDUE_COUNT'>
+        <desc xml:lang='hy-AM'>Ընթերցողը չափից շատ ժամկետանց նյութեր ունի</desc>
+    </event>
+    <event code='1578' textcode='ACTION_HOLD_NOTIFICATION_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող action_hold_notification չի գտնված</desc>
+    </event>
+    <event code='1610' textcode='MONEY_CHECK_PAYMENT_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող money_check_payment չի գտնված</desc>
+    </event>
+    <event code='1623' textcode='PERMISSION_USR_PERM_MAP_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող permission_usr_perm_map չի գտնված</desc>
+    </event>
+    <event code='1581' textcode='ASSET_STAT_CAT_ENTRY_COPY_MAP_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող asset_stat_cat_entry_copy_map չի գտնված</desc>
+    </event>
+    <event code='1547' textcode='CONFIG_ITEM_FORM_MAP_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող config_item_form_map չի գտնված</desc>
+    </event>
+    <event code='1592' textcode='CONTAINER_USER_BUCKET_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող container_user_bucket չի գտնված</desc>
+    </event>
+    <event code='1617' textcode='ACTION_UNFULFILLED_HOLD_LIST_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող action_unfulfilled_hold_list չի գտնված</desc>
+    </event>
+    <event code='1552' textcode='ACTOR_ORG_UNIT_HOURS_OF_OPERATION_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող actor_org_unit_hours_of_operation չի գտնված</desc>
+    </event>
+    <event code='1576' textcode='EX_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Պատվիրված ex չի գտնված</desc>
+    </event>
+    <event code='7019' textcode='HOLD_CAPTURE_DELAYED'>
+        <desc xml:lang='hy-AM'>Պահումի որսումը կասեցվել է այս նյութի համար</desc>
+    </event>
+    <event code='1502' textcode='ASSET_COPY_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>
+			Ինչ որ մեկը փորձում է կանչել պատկերի պատճեն 
+			համակարգից և պատկերը չի գտնված:
+		</desc>
+    </event>
+    <event code='1703' textcode='WORKSTATION_NAME_EXISTS'>
+        <desc xml:lang='hy-AM'> Այդ անունով աշխատանքային կայան գոյություն ունի </desc>
+    </event>
+    <event code='1568' textcode='CONFIG_COPY_STATUS_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող config_copy_status չի գտնված</desc>
+    </event>
+    <event code='1539' textcode='CONTAINER_COPY_BUCKET_ITEM_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող container_copy_bucket_item չի գտնված</desc>
+    </event>
+    <event code='1590' textcode='ACTOR_STAT_CAT_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող actor_stat_cat չի գտնված</desc>
+    </event>
+    <event code='9001' textcode='REPORT_REPORT_EXISTS'>
+        <desc xml:lang='hy-AM'> Տված անունով և թղթապանակով հաշվետվությունը արդեն առկա է</desc>
+    </event>
+    <event code='1705' textcode='VOLUME_LABEL_EXISTS'>
+        <desc xml:lang='hy-AM'>Նույն պիտակով, վերնագրովշ և վայրով հտոր արդեն կա</desc>
+    </event>
+    <event code='8008' textcode='OFFLINE_INVALID_SESSION'>
+        <desc xml:lang='hy-AM'> Սէսիայի անոնը սխալ է </desc>
+    </event>
+    <event code='1577' textcode='ACTION_HOLD_COPY_MAP_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող action_hold_copy_mapչի գտնված</desc>
+    </event>
+    <event code='1648' textcode='PERMISSION_USR_WORK_OU_MAP_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Պահանջվող permission_usr_work_ou_map չի գտնվել</desc>
+    </event>
+    <event code='1638' textcode='REPORTER_TEMPLATE_FOLDER_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող reporter_template_folder չի գտնված</desc>
+    </event>
+    <event code='7024' textcode='HOLD_RESERVATION_CONFLICT'>
+        <desc xml:lang='hy-AM'>Both a hold and a reservation exist for this item; staff intervention is required to resolve the conflict.</desc>
+    </event>
+    <event code='1644' textcode='VANDELAY_AUTHORITY_QUEUE_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Պահանջվող vandelay_authority_queue չի գտնվել</desc>
+    </event>
+    <event code='7006' textcode='COPY_IS_REFERENCE'>
+        <desc xml:lang='hy-AM'> Օրինակը տեղեկատու նյութ է: </desc>
+    </event>
+    <event code='1634' textcode='REPORTER_TEMPLATE_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող reporter_template չի գտնված</desc>
+    </event>
+    <event code='1583' textcode='ACTION_SURVEY_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող action_survey չի գտնված</desc>
+    </event>
+    <event code='1859' textcode='ACQ_PURCHASE_ORDER_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Պահանջվող acq.purchase_order չի գտնվել</desc>
+    </event>
+    <event code='1625' textcode='CONTAINER_BIBLIO_RECORD_ENTRY_BUCKET_ITEM_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող container_biblio_record_entry_bucket_item չի գտնված</desc>
+    </event>
+    <event code='1000' textcode='LOGIN_FAILED'>
+        <desc xml:lang='hy-AM'>Օգտվողի գրանցումը ձախողվեգ</desc>
+    </event>
+    <event code='1873' textcode='ACQ_CURRENCY_TYPE_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Պահանջվող acq.currency_type չի գտնվել</desc>
+    </event>
+    <event code='1599' textcode='MONEY_GROCERY_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող money_grocery չի գտնված</desc>
+    </event>
+    <event code='8009' textcode='OFFLINE_NO_ORG'>
+        <desc xml:lang='hy-AM'> org id չկա </desc>
+    </event>
+    <event code='8010' textcode='OFFLINE_SESSION_COMPLETE'>
+        <desc xml:lang='hy-AM'> org id չկա </desc>
+    </event>
+    <event code='7012' textcode='COPY_STATUS_MISSING'>
+        <desc xml:lang='hy-AM'>Օրինակը նշված է որպես բացակա</desc>
+    </event>
+    <event code='1532' textcode='MONEY_BILLABLE_TRANSACTION_SUMMARY_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող money_billable_transaction_summary չի գտնված</desc>
+    </event>
+    <event code='8001' textcode='OFFLINE_SESSION_FILE_EXISTS'>
+        <desc xml:lang='hy-AM'> Այս աշխատանքային կայանի համար օֆլայն ֆայլը գոյպւթյուն ունի այս սեսիայի ներսում </desc>
+    </event>
+    <event code='2003' textcode='INTERNAL_SERVER_ERROR'>
+        <desc xml:lang='hy-AM'>Աօկա է կայանի ներքին սխալ</desc>
+    </event>
+    <event code='1647' textcode='VANDELAY_QUEUED_AUTHORITY_RECORD_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Պահանջվող vandelay_queued_authority_record չի գտնվել</desc>
+    </event>
+    <event code='8002' textcode='OFFLINE_FILE_ERROR'>
+        <desc xml:lang='hy-AM'> Ոֆլայն ֆայլը կամ գրադարանը հնարվոր չ: ստեղծել կամ հասանելի դարձնել: </desc>
+    </event>
+    <event code='1597' textcode='BIBLIO_RECORD_NOTE_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող biblio_record_note չի գտնված</desc>
+    </event>
+    <event code='1846' textcode='ACQ_FUNDING_SOURCE_CREDIT_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Պահանջվող acq.funding_source_credit չի գտնվել</desc>
+    </event>
+    <event code='1588' textcode='ASSET_STAT_CAT_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Պահանջվող asset_stat_cat չի գտնված</desc>
+    </event>
+    <event code='1224' textcode='PATRON_ACCOUNT_EXPIRED'>
+        <desc xml:lang='hy-AM'>Ընթերցողի հաշիվը ժամկետանց է</desc>
+    </event>
+    <event code='1560' textcode='METABIB_METARECORD_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող metabib_metarecord չի գտնված</desc>
+    </event>
+    <event code='1707' textcode='HOLD_EXISTS'>
+        <desc xml:lang='hy-AM'>Ընտրված նյութի համար օգտվողը ունի բաց պահում</desc>
+    </event>
+    <event code='1712' textcode='AUTH_QUEUE_EXISTS'>
+        <desc xml:lang='hy-AM'>Նույն անվանումով հեղինակավոր գրառման հարցում արդեն կա</desc>
+    </event>
+    <event code='1566' textcode='MONEY_FORGIVE_PAYMENT_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող money_forgive_payment չի գտնված</desc>
+    </event>
+    <event code='1230' textcode='XACT_COLLISION'>
+        <desc xml:lang='hy-AM'>Հիշված նյութը խմբագրվըլ է մեկ այլ օգտվողի կողմից</desc>
+    </event>
+    <event code='1843' textcode='ACQ_LINEITEM_ATTR_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Պահանջվող acq.lineitem_attr չի գտնվել</desc>
+    </event>
+    <event code='1708' textcode='MONEY_COLLECTIONS_TRACKER_EXISTS'>
+        <desc xml:lang='hy-AM'>Կրկնվող money.collections_tracker պատկեր շտեմարանում աօկա է</desc>
+    </event>
+    <event code='1845' textcode='ACQ_PROVIDER_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Պահանջվող acq.provider չի գտնվել</desc>
+    </event>
+    <event code='1600' textcode='CONFIG_BIB_SOURCE_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող config_bib_sourceչի գտնված</desc>
+    </event>
+    <event code='1646' textcode='VANDELAY_QUEUED_BIB_RECORD_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Պահանջվող vandelay_queued_bib_record չի գտնվել</desc>
+    </event>
+    <event code='1228' textcode='BIB_RECORD_DELETED'>
+        <desc xml:lang='hy-AM'>Պահանջվող մատեն գրաղումը նշված է ջնջված</desc>
+    </event>
+    <event code='1841' textcode='ACQ_PICKLIST_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Պահանջվող acq.picklist չի գտնվել</desc>
+    </event>
+    <event code='7018' textcode='COPY_MARKED_LOST'>
+        <desc xml:lang='hy-AM'>Պահանջվող մատեն գրաղումը նշված է կորած</desc>
+    </event>
+    <event code='1642' textcode='CONFIG_CIRC_MODIFIER_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Պահանջվող config_circ_modifier չի գտնվել</desc>
+    </event>
+    <event code='1701' textcode='COPY_LOCATION_EXISTS'>
+        <desc xml:lang='hy-AM'> Պատճենվող տեղաբաշխումը գոյություն ունի </desc>
+    </event>
+    <event code='1589' textcode='ACTOR_CARD_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող actor_card չի գտնված</desc>
+    </event>
+    <event code='1856' textcode='ACQ_FUNDING_SOURCE_ALLOCATION_TOTAL_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Պահանջվող acq.funding_source_allocation_total չի գտնվել</desc>
+    </event>
+    <event code='1216' textcode='PATRON_CARD_INACTIVE'>
+        <desc xml:lang='hy-AM'>Ընթերցողի տոմսը ակտիվ չէ</desc>
+    </event>
+    <event code='1881' textcode='PERMISSION_GRP_PENALTY_THRESHOLD_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Պահանջվող permission_grp_penalty_threshold չի գտնվել</desc>
+    </event>
+    <event code='7013' textcode='PATRON_EXCEEDS_FINES'>
+        <desc xml:lang='hy-AM'>Հարցվող ընթերցողը հասել է մաքսիմում տուգանքի մեծությանը</desc>
+    </event>
+    <event code='1586' textcode='ACTOR_ORG_UNIT_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող actor_org_unit չի գտնված</desc>
+    </event>
+    <event code='1574' textcode='CONTAINER_CALL_NUMBER_BUCKET_ITEM_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող container_call_number_bucket_item չի գտնված</desc>
+    </event>
+    <event code='1518' textcode='ACTION_HOLD_TRANSIT_COPY_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող action_hold_transit_copy չի գտնված</desc>
+    </event>
+    <event code='1594' textcode='AUTHORITY_FULL_REC_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող authority_full_rec չի գտնված</desc>
+    </event>
+    <event code='1565' textcode='ACTOR_PROFILE_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող actor_profile չի գտնված</desc>
+    </event>
+    <event code='1580' textcode='METABIB_VIRTUAL_RECORD_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող metabib_virtual_record չի գտնված</desc>
+    </event>
+    <event code='1640' textcode='ACTOR_USR_ORG_UNIT_OPT_IN_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող actor_usr_org_unit_opt_in չի գտնված</desc>
+    </event>
+    <event code='1572' textcode='AUTHORITY_RECORD_NOTE_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող authority_record_note չի գտնված</desc>
+    </event>
+    <event code='10003' textcode='ACQ_LINEITEM_DETAIL_NO_ORG'>
+        <desc xml:lang='hy-AM'>Տողի նյութի մանրամասը չունի owning_lib</desc>
+    </event>
+    <event code='1603' textcode='CONTAINER_USER_BUCKET_ITEM_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող container_user_bucket_item չի գտնված</desc>
+    </event>
+    <event code='1615' textcode='ACTION_NON_CATALOGED_CIRCULATION_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող action_non_cataloged_circulation չի գտնված</desc>
+    </event>
+    <event code='1604' textcode='MONEY_USER_SUMMARY_NOT_FOUND'>
+        <desc xml:lang='hy-AM'>Հարցվող money_user_summary չի գտնված</desc>
+    </event>
+</ils_events>

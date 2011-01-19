@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<!DOCTYPE overlay SYSTEM "chrome://open_ils_staff_client/locale/lang.dtd">
+<?xul-overlay href="chrome://open_ils_staff_client/content/main/menu_frame_menus.xul"?>
+<!--
+<?xul-overlay href="/xul/rel_1_6_1_4/server/main/menu_frame_menus.xul"?>
+-->
+<overlay id="menu_frame_overlay" 
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script>dump('loading menu_frame_overlay.xul\n');</script>
+
+<commandset id="universal_cmds" />
+<keyset id="menu_frame_keys" />
+
+<!-- The top level widget for the staff client -->
+<box id="menu_frame_main" flex="1" orient="vertical">
+    <toolbox id="main_toolbox"/>
+    <tabbox id="main_tabbox" flex="1" eventnode="window" handleCtrlTab="true">
+        <tabs id="main_tabs" closebutton="true" onclosetab="g.menu.close_tab()">
+            <tab id="tab_1" accesskey="&staff.chrome.menu_frame_overlay.tab1.accesskey;" label="&staff.chrome.menu_frame_overlay.tab1.label;" hidden="true" />
+            <tab id="tab_2" accesskey="&staff.chrome.menu_frame_overlay.tab2.accesskey;" label="&staff.chrome.menu_frame_overlay.tab2.label;" hidden="true" />
+            <tab id="tab_3" accesskey="&staff.chrome.menu_frame_overlay.tab3.accesskey;" label="&staff.chrome.menu_frame_overlay.tab3.label;" hidden="true" />
+            <tab id="tab_4" accesskey="&staff.chrome.menu_frame_overlay.tab4.accesskey;" label="&staff.chrome.menu_frame_overlay.tab4.label;" hidden="true" />
+            <tab id="tab_5" accesskey="&staff.chrome.menu_frame_overlay.tab5.accesskey;" label="&staff.chrome.menu_frame_overlay.tab5.label;" hidden="true" />
+            <tab id="tab_6" accesskey="&staff.chrome.menu_frame_overlay.tab6.accesskey;" label="&staff.chrome.menu_frame_overlay.tab6.label;" hidden="true" />
+            <tab id="tab_7" accesskey="&staff.chrome.menu_frame_overlay.tab7.accesskey;" label="&staff.chrome.menu_frame_overlay.tab7.label;" hidden="true" />
+            <tab id="tab_8" accesskey="&staff.chrome.menu_frame_overlay.tab8.accesskey;" label="&staff.chrome.menu_frame_overlay.tab8.label;" hidden="true" />
+            <tab id="tab_9" accesskey="&staff.chrome.menu_frame_overlay.tab9.accesskey;" label="&staff.chrome.menu_frame_overlay.tab9.label;" hidden="true" />
+        </tabs>
+        <tabpanels id="main_panels" flex="1">
+            <tabpanel id="panel_1"><label value="panel_1"/></tabpanel>
+            <tabpanel id="panel_2"><label value="panel_2"/></tabpanel>
+            <tabpanel id="panel_3"><label value="panel_3"/></tabpanel>
+            <tabpanel id="panel_4"><label value="panel_4"/></tabpanel>
+            <tabpanel id="panel_5"><label value="panel_5"/></tabpanel>
+            <tabpanel id="panel_6"><label value="panel_6"/></tabpanel>
+            <tabpanel id="panel_7"><label value="panel_7"/></tabpanel>
+            <tabpanel id="panel_8"><label value="panel_8"/></tabpanel>
+            <tabpanel id="panel_9"><label value="panel_9"/></tabpanel>
+        </tabpanels>
+    </tabbox>
+    <statusbar>
+        <statusbarpanel />
+        <spacer flex="1" />
+        <progressmeter id="network_progress" flex="1" mode="determined" value="0" tooltip="network_progress_tip"/>
+        <statusbarpanel />
+    </statusbar>
+    <tooltip id="network_progress_tip" noautohide="true">
+        <grid>
+            <columns>
+                <column/>
+                <column/>
+                <column/>
+                <column flex="1"/>
+                <column/>
+                <column/>
+                <column/>
+                <column/>
+            </columns>
+            <rows id="network_progress_rows">
+            </rows>
+        </grid>
+    </tooltip>
+</box>
+
+<!-- The main top level menubar -->
+<toolbox id="main_toolbox">
+    <menubar id="main_menubar">
+        <menu id="main.menu.file" />
+        <menu id="main.menu.edit" />
+        <menu id="main.menu.search" />
+        <menu id="main.menu.circ" />
+        <menu id="main.menu.cat" />
+        <menu id="main.menu.acq" />
+        <menu id="main.menu.booking" />
+        <spacer flex="1" />
+        <menu id="main.menu.admin" />
+        <!--
+        <menu id="main.menu.help" />
+        -->
+    </menubar>
+    <toolbar id="main_toolbar" hidden="true">
+        <toolbarbutton id="tb_checkout" 
+            command="cmd_circ_checkout" 
+            image="chrome://open_ils_staff_client/skin/media/images/Arrow-rightup-small.png" 
+            label="&staff.main.button_bar.check_out.label;" 
+            accesskey="&staff.main.button_bar.check_out.accesskey;" />
+        <toolbarbutton id="tb_checkin" 
+            command="cmd_circ_checkin" 
+            image="chrome://open_ils_staff_client/skin/media/images/center.png" 
+            label="&staff.main.button_bar.check_in.label;" 
+            accesskey="&staff.main.button_bar.check_in.accesskey;" />
+        <toolbarbutton id="tb_item_status" 
+            command="cmd_copy_status" 
+            image="chrome://open_ils_staff_client/skin/media/images/HILLBLU_libro_32x32.png" 
+            label="&staff.main.button_bar.item_status.label;" 
+            accesskey="&staff.main.button_bar.item_status.accesskey;" />
+        <toolbarseparator />
+        <toolbarbutton id="tb_patron_search" 
+            command="cmd_patron_search" 
+            image="chrome://open_ils_staff_client/skin/media/images/HILLBLU_lente_32x32.png" 
+            label="&staff.main.button_bar.patron_search.label;" 
+            accesskey="&staff.main.button_bar.patron_search.accesskey;" />
+        <toolbarbutton id="tb_patron_registration" 
+            command="cmd_patron_register" 
+            image="chrome://open_ils_staff_client/skin/media/images/HILLBLU_famiglia_32x32.png" 
+            label="&staff.main.button_bar.patron_registration.label;" 
+            accesskey="&staff.main.button_bar.patron_registration.accesskey;" />
+    </toolbar>
+</toolbox>
+
+</overlay>
