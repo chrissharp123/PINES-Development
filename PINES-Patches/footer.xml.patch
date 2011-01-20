@@ -1,0 +1,14 @@
+--- /openils/var/web/opac/skin/default/xml/footer.xml	2010-12-02 12:12:52.000000000 -0500
++++ /root/patches/footer.xml	2011-01-20 13:07:31.000000000 -0500
+@@ -24,6 +24,11 @@
+ 					<a target='_blank' class='classic_link' id='eg_gal_link'
+ 						href='&footer.union.url;'>&footer.union;</a>
+ 				</span>
++                <span> | </span>
++                <span class='footer_link'>
++                    <a target='_blank' class='classic_link'
++                        href='&footer.IE8.url;'>&footer.IE8;</a>
++                </span>
+ 		</div>
+         <div id='copyright_text'>
+             <span>&footer.copyright;</span>
