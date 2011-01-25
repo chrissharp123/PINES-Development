@@ -4,3 +4,5 @@ GPLS/PINES Evergreen ILS README
 This is the PINES-tailored version of Evergreen-ILS.  It is stock Evergreen-ILS-1.6.1.4,
 with PINES' customizations hard-coded in.  This file will record the changes made to the 
 original code.
+
+Please send questions to csharp at georgialibraries dot org.
