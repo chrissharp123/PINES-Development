@@ -102,10 +102,3 @@
 -#rdetail_image_cell { border: 1px solid white; border-right: 1px solid #A7EA9D;}
 +#rdetail_image_cell { border: 1px solid white; border-right: 1px solid #96BEAA;}
  
- 
- 
-@@ -99,3 +99,4 @@
- 
- .hold_expire_warning { color:red; }
- 
-+
