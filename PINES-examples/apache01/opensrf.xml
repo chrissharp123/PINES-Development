@@ -95,7 +95,7 @@ vim:et:ts=4:sw=4:
                 <base_uri>https://gapines.org/reporter/</base_uri>
                 <database>
                     <driver>Pg</driver>
-                    <host>10.1.0.14</host>
+                    <host>10.0.0.0</host>
                     <port>9999</port>
                     <name>evergreen</name>
                     <db>evergreen</db>
@@ -105,7 +105,7 @@ vim:et:ts=4:sw=4:
                 </database>
                 <state_store>
                     <driver>Pg</driver>
-                    <host>10.1.0.13</host>
+                    <host>10.0.0.0</host>
                     <port>9999</port>
                     <db>evergreen</db>
                     <user>postgres</user>
@@ -139,7 +139,7 @@ vim:et:ts=4:sw=4:
             <default>oclc</default>
             <services>
                 <oclc>
-                    <host>132.174.11.57</host>
+                    <host>[ip.address]</host>
                     <port>210</port>
                     <db>OLUCWorldCat</db>
                     <attrs>
@@ -159,7 +159,7 @@ vim:et:ts=4:sw=4:
 
         <added_content>
             <module>OpenILS::WWW::AddedContent::Syndetic</module>
-            <userid>evertest</userid>
+            <userid>userid</userid>
             <base_url>http://syndetics.com/index.aspx</base_url>
             <timeout>1</timeout>
             <retry_timeout>300</retry_timeout>
@@ -509,7 +509,7 @@ vim:et:ts=4:sw=4:
                            <type>master</type>
                            <weight>2</weight>
                            <user>postgres</user>
-                           <host>10.1.0.13</host>
+                           <host>10.0.0.0</host>
                            <port>9999</port>
                            <pw>postgres</pw>
                            <db>evergreen</db>
@@ -540,7 +540,7 @@ vim:et:ts=4:sw=4:
                         <type>master</type>
                         <weight>2</weight>
                         <user>postgres</user>
-                        <host>10.1.0.13</host>
+                        <host>10.0.0.0</host>
                         <port>9999</port>
                         <pw>postgres</pw>
                         <db>evergreen</db>
@@ -623,7 +623,7 @@ vim:et:ts=4:sw=4:
                         <type>master</type>
                         <weight>2</weight>
                         <user>postgres</user>
-                        <host>10.1.0.13</host>
+                        <host>10.0.0.0</host>
                         <port>9999</port>
                         <pw>postgres</pw>
                         <db>evergreen</db>
