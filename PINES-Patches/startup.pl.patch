@@ -1,6 +1,0 @@
-16,17c16,17
-< #use OpenILS::WWW::Redirect qw(/openils/conf/opensrf_core.xml);
-< #OpenILS::WWW::Redirect->parse_ips_file('/openils/conf/lib_ips.txt');
----
-> use OpenILS::WWW::Redirect qw(/openils/conf/opensrf_core.xml);
-> OpenILS::WWW::Redirect->parse_ips_file('/openils/conf/lib_ips.txt');
