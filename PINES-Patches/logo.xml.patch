@@ -1,5 +1,5 @@
 --- common/logo.xml.orig	2011-01-27 09:58:23.000000000 -0500
-+++ common/logo.xml	2011-01-27 09:58:47.000000000 -0500
++++ /openils/var/web/opac/skin/default/xml/common/logo.xml 	2011-01-27 09:58:47.000000000 -0500
 @@ -1,4 +1,4 @@
  <div id='logo_div'>
  	<script language='javascript' type='text/javascript'>config.ids.common.top_logo = "top_left_logo";</script>
