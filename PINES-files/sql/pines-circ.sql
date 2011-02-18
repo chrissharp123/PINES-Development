@@ -1,3 +1,4 @@
+BEGIN;
 -- add no_fines rules
 INSERT INTO config.rule_max_fine (name, amount, is_percent)  VALUES (
 	'no_fines', '0.00', FALSE);
@@ -173,4 +174,4 @@ INSERT INTO config.circ_matrix_matchpoint (id, active, org_unit, grp, circ_modif
 	DEFAULT, TRUE, 1, 1, 'video-long', NULL, NULL, NULL, FALSE, NULL, NULL, NULL, NULL, TRUE, 10, 2, 3, NULL);
 INSERT INTO config.circ_matrix_matchpoint (id, active, org_unit, grp, circ_modifier, marc_type, marc_form, marc_vr_format, ref_flag, juvenile_flag, is_renewal, usr_age_lower_bound, usr_age_upper_bound, circulate, duration_rule, recurring_fine_rule, max_fine_rule, script_test) VALUES (
 	DEFAULT, TRUE, 1, 1, 'video-mid', NULL, NULL, NULL, FALSE, NULL, NULL, NULL, NULL, TRUE, 7, 3, 3, NULL);
-
+COMMIT;

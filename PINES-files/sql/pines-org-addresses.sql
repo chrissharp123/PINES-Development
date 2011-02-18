@@ -1,3 +1,4 @@
+BEGIN;
 -- enter PINES org addresses
 
 INSERT INTO actor.org_address (id, valid, address_type, org_unit, street1, street2, city, county, state, country, post_code) VALUES (
@@ -678,3 +679,4 @@ INSERT INTO actor.org_address (id, valid, address_type, org_unit, street1, stree
 	342, TRUE, 'MAILING', 356, '706 Old Dalton-Ellijay Rd', NULL, 'Chatsworth', 'Murray', 'GA', 'USA', '30705');
 INSERT INTO actor.org_address (id, valid, address_type, org_unit, street1, street2, city, county, state, country, post_code) VALUES (
 	343, TRUE, 'MAILING', 356, '706 Old Dalton-Ellijay Rd.', NULL, 'Chatsworth', 'Murray', 'GA', 'USA', '30705');
+COMMIT;
