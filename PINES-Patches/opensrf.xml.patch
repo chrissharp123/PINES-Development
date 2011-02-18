@@ -1,9 +1,12 @@
---- /openils/conf/opensrf.xml.2011.1.28.15.37.37	2011-01-28 15:37:37.000000000 -0500
-+++ /openils/conf/opensrf.xml	2011-02-04 08:49:48.000000000 -0500
+--- /openils/conf/opensrf.xml.2011.2.18.12.33.27	2011-02-18 12:33:27.000000000 -0500
++++ /openils/conf/opensrf.xml	2011-02-18 13:56:41.000000000 -0500
+
+@@ -145,60 +143,8 @@
  
-@@ -147,58 +145,6 @@
+ 
          <z3950>
-             <default>biblios</default>
+-            <default>biblios</default>
++            <default>oclc</default>
              <services>
 -                <biblios>
 -                    <!-- biblios does not require username/password -->
@@ -60,6 +63,7 @@
                  <oclc>
                      <!-- Z3950 settings for OCLC.  Note that OCLC requires username/password -->
                      <host>zcat.oclc.org</host>
+
 @@ -408,7 +354,7 @@
                      <max_superpages>10</max_superpages>
  
