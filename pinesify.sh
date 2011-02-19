@@ -45,7 +45,12 @@ done
 # add in PINES DB entries
 SQLFiles () {
 cd $SQL_DIR
-ordered_file_list=`ls $SQL_DIR`;
+ordered_file_list="
+$SQL_DIR/pines-orgs.sql
+$SQL_DIR/pines-org-addresses.sql
+$SQL_DIR/update_addresses.sql
+$SQL_DIR/pines-circ.sql
+$SQL_DRI/EvergreenReportTemplates_1_6.sql";
 
 # ---------------------------------------------------------------------------
 # Import files via psql, warn user on error, suggest abort.
@@ -76,16 +81,16 @@ fi
 done
 }
 
-#MoveFiles
-#PatchFiles
+MoveFiles
+PatchFiles
 SQLFiles
 
 # restart apache
-#/etc/init.d/apache2 restart
+/etc/init.d/apache2 restart
 
 # restore file ownership to opensrf
-#chown -R opensrf:opensrf /openils
+chown -R opensrf:opensrf /openils
 
 
-#echo "Done." && exit
+echo "Done." && exit
 
