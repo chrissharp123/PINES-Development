@@ -4,14 +4,18 @@ INSERT INTO config.rule_max_fine (name, amount, is_percent)  VALUES (
 	'no_fines', '0.00', FALSE);
 INSERT INTO config.rule_recuring_fine (name, high, normal, low, recurance) VALUES (
 	'no_fines', '0.00', '0.00', '0.00', '1 day');
+COMMIT;
 
 -- add circ_duration rules
+BEGIN;
 INSERT INTO config.rule_circ_duration (name, extended, normal, shrt, max_renewals) VALUES (
 	'3_months_1_renew', '3 mons', '3 mons', '3 mons', 1);
 INSERT INTO config.rule_circ_duration (name, extended, normal, shrt, max_renewals) VALUES (
 	'1_day_0_renew', '1 day', '1 day', '1 day', 0);
+COMMIT;
 
 -- add PINES circ_modifiers
+BEGIN;
 INSERT INTO config.circ_modifier (code, name, description, sip2_media_type, magnetic_media) VALUES (
 	'art', 'art', 'art', '001', TRUE);
 INSERT INTO config.circ_modifier (code, name, description, sip2_media_type, magnetic_media) VALUES (
@@ -80,8 +84,10 @@ INSERT INTO config.circ_modifier (code, name, description, sip2_media_type, magn
 	'videogame', 'videogame', 'videogame', '001', TRUE);
 INSERT INTO config.circ_modifier (code, name, description, sip2_media_type, magnetic_media) VALUES (
 	'videogamelong', 'videogamelong', 'videogamelong', '001', TRUE);
+COMMIT;
 
 -- add basic circulation policies
+BEGIN;
 INSERT INTO config.circ_matrix_matchpoint (id, active, org_unit, grp, circ_modifier, marc_type, marc_form, marc_vr_format, ref_flag, juvenile_flag, is_renewal, usr_age_lower_bound, usr_age_upper_bound, circulate, duration_rule, recurring_fine_rule, max_fine_rule, script_test) VALUES (
 	DEFAULT, TRUE, 1, 1, NULL, 'a', NULL, NULL, FALSE, NULL, NULL, NULL, NULL, TRUE, 10, 2, 3, NULL);
 INSERT INTO config.circ_matrix_matchpoint (id, active, org_unit, grp, circ_modifier, marc_type, marc_form, marc_vr_format, ref_flag, juvenile_flag, is_renewal, usr_age_lower_bound, usr_age_upper_bound, circulate, duration_rule, recurring_fine_rule, max_fine_rule, script_test) VALUES (
