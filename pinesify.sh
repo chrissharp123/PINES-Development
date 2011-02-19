@@ -81,15 +81,15 @@ fi
 done
 }
 
-MoveFiles
-PatchFiles
+#MoveFiles
+#PatchFiles
 SQLFiles
 
 # restart apache
-/etc/init.d/apache2 restart
+#/etc/init.d/apache2 restart
 
 # restore file ownership to opensrf
-chown -R opensrf:opensrf /openils
+#chown -R opensrf:opensrf /openils
 
 
 echo "Done." && exit
