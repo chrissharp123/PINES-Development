@@ -6,7 +6,7 @@ COMMIT;
 -- edit 9 default ous to PINES values
 BEGIN;
 UPDATE actor.org_unit SET shortname = 'PINES', name = 'PINES' WHERE id = 1;
-UPDATE actor.org_unit SET parent_ou = 1, ou_type = 2, ill_address = NULL, holds_address = NULL, mailing_address = NULL, billing_address = NULL, shortname = 'MCCLS', name = 'Moultrie-Colquitt County Library' WHERE id = 2;
+UPDATE actor.org_unit SET parent_ou = 1, ou_type = 2, ill_address = NULL, holds_address = NULL, mailing_address = NULL, billing_address = NULL, shortname = 'MCCLS', name = 'Moultrie-Colquitt County Library System' WHERE id = 2;
 UPDATE actor.org_unit SET parent_ou = 2, ou_type = 3, ill_address = 2, holds_address = 2, mailing_address = 2, billing_address = 2, shortname = 'MCCLS-HQ', name = 'Moultrie-Colquitt County Library' WHERE id = 3;
 UPDATE actor.org_unit SET parent_ou = 2, ou_type = 3, ill_address = 3, holds_address = 3, mailing_address = 3, billing_address = 3, shortname = 'MCCLS-DOE', name = 'Doerun Municipal Library' WHERE id = 4;
 UPDATE actor.org_unit SET parent_ou = 2, ou_type = 3, ill_address = 4, holds_address = 4, mailing_address = 4, billing_address = 4, shortname = 'MCCLS-BKM', name = 'MCCLS Bookmobile' WHERE id = 5;
@@ -543,7 +543,7 @@ INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phon
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	271, 267, 3, 'CPRL-L', 'Irwin County Library', 'icl@cprl.org', '229-468-2148', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
-	272, 267, 3, 'CPRL-R', 'Headquarters Library', 'cprl@cprl.org', '229-386-3400', TRUE);
+	272, 267, 3, 'CPRL-R', 'CRPL Headquarters Library', 'cprl@cprl.org', '229-386-3400', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	273, 267, 3, 'CPRL-T', 'Tifton-Tift County Public Library', 'ttcpl@cprl.org', '229-386-7148', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (

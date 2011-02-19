@@ -508,7 +508,7 @@ INSERT INTO actor.org_address (id, valid, address_type, org_unit, street1, stree
 INSERT INTO actor.org_address (id, valid, address_type, org_unit, street1, street2, city, county, state, country, post_code) VALUES (
 	256, TRUE, 'MAILING', 320, 'P.O. Box 597', NULL, 'Mount Zion', 'Carroll', 'GA', 'US', '30150');
 INSERT INTO actor.org_address (id, valid, address_type, org_unit, street1, street2, city, county, state, country, post_code) VALUES (
-	257, TRUE, 'MAILING', 321, '115 Alford Street', NULL, 'LaGrange', 'Troup', NULL, 'US', '30240');
+	257, TRUE, 'MAILING', 321, '115 Alford Street', NULL, 'LaGrange', 'Troup', 'GA', 'US', '30240');
 INSERT INTO actor.org_address (id, valid, address_type, org_unit, street1, street2, city, county, state, country, post_code) VALUES (
 	258, TRUE, 'MAILING', 322, '600 East Main Street', NULL, 'Hogansville', 'Troup', 'GA', 'US', '30230');
 INSERT INTO actor.org_address (id, valid, address_type, org_unit, street1, street2, city, county, state, country, post_code) VALUES (
@@ -592,7 +592,7 @@ INSERT INTO actor.org_address (id, valid, address_type, org_unit, street1, stree
 INSERT INTO actor.org_address (id, valid, address_type, org_unit, street1, street2, city, county, state, country, post_code) VALUES (
 	298, TRUE, 'MAILING', 345, '108 Catoosa Circle', NULL, 'Ringgold', 'Catoosa', 'GA', 'US', '30701');
 INSERT INTO actor.org_address (id, valid, address_type, org_unit, street1, street2, city, county, state, country, post_code) VALUES (
-	299, TRUE, 'MAILING', 342, '6190 Highway 212', NULL, 'Covington', NULL, 'G', 'US', NULL
+	299, TRUE, 'MAILING', 342, '6190 Highway 212', NULL, 'Covington', NULL, 'GA', 'US', '30016');
 INSERT INTO actor.org_address (id, valid, address_type, org_unit, street1, street2, city, county, state, country, post_code) VALUES (
 	300, TRUE, 'MAILING', 342, '6191 Highway 212', NULL, 'Covington', NULL, 'GA', 'US', '30016');
 INSERT INTO actor.org_address (id, valid, address_type, org_unit, street1, street2, city, county, state, country, post_code) VALUES (
