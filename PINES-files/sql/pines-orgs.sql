@@ -9,7 +9,7 @@ UPDATE actor.org_unit SET shortname = 'PINES', name = 'PINES' WHERE id = 1;
 UPDATE actor.org_unit SET parent_ou = 1, ou_type = 2, ill_address = NULL, holds_address = NULL, mailing_address = NULL, billing_address = NULL, shortname = 'MCCLS', name = 'Moultrie-Colquitt County Library' WHERE id = 2;
 UPDATE actor.org_unit SET parent_ou = 2, ou_type = 3, ill_address = 2, holds_address = 2, mailing_address = 2, billing_address = 2, shortname = 'MCCLS-HQ', name = 'Moultrie-Colquitt County Library' WHERE id = 3;
 UPDATE actor.org_unit SET parent_ou = 2, ou_type = 3, ill_address = 3, holds_address = 3, mailing_address = 3, billing_address = 3, shortname = 'MCCLS-DOE', name = 'Doerun Municipal Library' WHERE id = 4;
-UPDATE actor.org_unit SET parent_ou = 2, ou_type = 3, ill_address = 4, holds_address = 4, mailing_address = 4, billing_address = 4, shortname = 'MCCLS-BKM', name = 'Bookmobile' WHERE id = 5;
+UPDATE actor.org_unit SET parent_ou = 2, ou_type = 3, ill_address = 4, holds_address = 4, mailing_address = 4, billing_address = 4, shortname = 'MCCLS-BKM', name = 'MCCLS Bookmobile' WHERE id = 5;
 UPDATE actor.org_unit SET parent_ou = 1, ou_type = 2, ill_address = NULL, holds_address = NULL, mailing_address = NULL, billing_address = NULL, shortname = 'ARL', name = 'Athens Regional Library System' WHERE id = 6;
 UPDATE actor.org_unit SET parent_ou = 6, ou_type = 3, ill_address = 5, holds_address = 5, mailing_address = 5, billing_address = 5, shortname = 'ARL-ATH', name = 'Athens-Clarke County Library' WHERE id = 7;
 UPDATE actor.org_unit SET parent_ou = 6, ou_type = 3, ill_address = 6, holds_address = 6, mailing_address = 6, billing_address = 6, shortname = 'ARL-WAT', name = 'Watkinsville/Oconee County Library' WHERE id = 8;
@@ -18,24 +18,6 @@ COMMIT;
 
 -- insert PINES org_units 
 BEGIN;
-INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
-	1, , 1, 'PINES', 'PINES', NULL, NULL, TRUE);
-INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
-	2, 1, 2, 'MCCLS', 'Moultrie-Colquitt County Library', NULL, NULL, TRUE);
-INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
-	3, 2, 3, 'MCCLS-HQ', 'Moultrie-Colquitt County Library', 'msj@mccls.org', '229-985-6540', TRUE);
-INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
-	4, 2, 3, 'MCCLS-DOE', 'Doerun Municipal Library', 'msj@mccls.org', '229-782-5507', TRUE);
-INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
-	5, 2, 3, 'MCCLS-BKM', 'Bookmobile', 'msj@mccls.org', '229-985-6540', TRUE);
-INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
-	6, 1, 2, 'ARL', 'Athens Regional Library System', NULL, NULL, TRUE);
-INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
-	7, 6, 3, 'ARL-ATH', 'Athens-Clarke County Library', 'athlibrary@athenslibrary.org', '706-613-3650', TRUE);
-INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
-	8, 6, 3, 'ARL-WAT', 'Watkinsville/Oconee County Library', 'watkinsville@athenslibrary.org', '706-769-3950', TRUE);
-INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
-	9, 6, 3, 'ARL-BOG', 'Bogart Library', 'boglib@yahoo.com', '770-725-9443', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	10, 6, 3, 'ARL-LEX', 'Lexington/Oglethorpe County Library', 'oglethorpelibrary@yahoo.com', '706-743-8817', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
@@ -51,7 +33,7 @@ INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phon
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	16, 6, 3, 'ARL-LYNDON', 'Lyndon House Art Resource Ctr.', 'athlib@yahoo.com', '706-613-3623', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
-	17, 6, 3, 'ARL-BKM', 'Bookmobile', NULL, '706-613-3650 ext.320', TRUE);
+	17, 6, 3, 'ARL-BKM', 'ARL Bookmobile', NULL, '706-613-3650 ext.320', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	18, 6, 3, 'ARL-EAST', 'East Athens Community Resource Ctr.', 'lywright@athenslibrary.org', '706-613-3657', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
@@ -59,13 +41,13 @@ INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phon
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	20, 6, 3, 'ARL-PWOODS', 'Pinewoods North Community Learning Center', 'pinewoods@arlsmail.org', '706-613-3708', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
-	21, 1, 2, 'ECPL', 'Elbert County Public Library', NULL, NULL, TRUE);
+	21, 1, 2, 'ECPL', 'Elbert County Public Library System', NULL, NULL, TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	22, 21, 3, 'ECPL-ECPL', 'Elbert County Public Library', 'pjohnson@elbertcountypl.org', '7062835375', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	23, 21, 3, 'ECPL-BWMN', 'Bowman Branch', 'pjohnson@elbertcountypl.org', '7062450705', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
-	24, 21, 3, 'ECPL-BKM', 'Bookmobile', NULL, '7062835375', TRUE);
+	24, 21, 3, 'ECPL-BKM', 'ECPL Bookmobile', NULL, '7062835375', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	25, 1, 2, 'SHRL', 'Sara Hightower Regional Library', NULL, NULL, TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
@@ -79,7 +61,7 @@ INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phon
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	30, 25, 3, 'SHRL-BK', 'Outreach Collection', 'scooley@romelibrary.org', NULL, TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
-	31, 1, 2, 'FBHCL', 'Fitzgerald-Ben Hill County Library', NULL, NULL, TRUE);
+	31, 1, 2, 'FBHCL', 'Fitzgerald-Ben Hill County Library System', NULL, NULL, TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	32, 31, 3, 'FBHCL-MAIN', 'Fitzgerald-Ben Hill County Library', 'circulation@fbhcl.org', '229-426-5080', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
@@ -121,7 +103,7 @@ INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phon
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	51, 46, 3, 'URRLS-MR', 'Monroe-Walton County Library', 'monroe@uncleremus.org', '770-267-4630', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
-	52, 46, 3, 'URRLS-OK', 'O'Kelly Memorial Library', 'rick@uncleremus.org', '770-466-2895', TRUE);
+	52, 46, 3, 'URRLS-OK', E'O\'Kelly Memorial Library', 'rick@uncleremus.org', '770-466-2895', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	53, 46, 3, 'URRLS-PU', 'Putnam County Public Library', 'putnam@uncleremus.org', '706-485-6768', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
@@ -145,7 +127,7 @@ INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phon
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	63, 58, 3, 'OKRL-WWC', 'Waycross-Ware Co. Public Lib.', 'wx31501@yahoo.com', '912-287-4978', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
-	64, 58, 3, 'OKRL-BKM', 'Bookmobile', 'wx31501@yahoo.com', '912-287-4978', FALSE);
+	64, 58, 3, 'OKRL-BKM', 'OKRL Bookmobile', 'wx31501@yahoo.com', '912-287-4978', FALSE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	65, 1, 2, 'STATELIB', 'Georgia Public Library Service', NULL, NULL, TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
@@ -171,11 +153,11 @@ INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phon
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	76, 68, 3, 'TRRL-MCINT', 'McIntosh County/Ida Hilton Library', 'cbrooks@trrl.org', '912-437-2124', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
-	77, 68, 3, 'TRRL-STMRY', 'St. Mary's Library', 'smpladm@trrl.org', '912-882-4800', TRUE);
+	77, 68, 3, 'TRRL-STMRY', E'St. Mary\'s Library', 'smpladm@trrl.org', '912-882-4800', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	78, 68, 3, 'TRRL-WAYNE', 'Wayne County Library', 'wayneill@trrl.org', '912-427-2500', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
-	79, 68, 3, 'TRRL-BKM', 'Bookmobile', 'jwendt@trrl.org', '912-267-1212', TRUE);
+	79, 68, 3, 'TRRL-BKM', 'TRRL Bookmobile', 'jwendt@trrl.org', '912-267-1212', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	80, 1, 2, 'SJRLS', 'Screven-Jenkins Regional Library', NULL, NULL, TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
@@ -183,11 +165,11 @@ INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phon
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	82, 80, 3, 'SJRLS-JCML', 'Jenkins County Memorial Library', 'jcml@sjrls.org', '912 982-4244', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
-	83, 80, 3, 'SJRLS-BKM', 'Bookmobile', 'bgilbert@sjrls.org', '912 564-7526', TRUE);
+	83, 80, 3, 'SJRLS-BKM', 'SJRLS Bookmobile', 'bgilbert@sjrls.org', '912 564-7526', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	84, 80, 3, 'SJRLS-JCES', 'Jenkins County Elementary School', 'jcml@sjrls.org', '912-564-7526', FALSE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
-	85, 1, 2, 'RML', 'Roddenbery Memorial Library', NULL, NULL, TRUE);
+	85, 1, 2, 'RML', 'Roddenbery Memorial Library System', NULL, NULL, TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	86, 85, 3, 'RML-MAIN', 'Roddenbery Memorial Library', 'circdesk@rmlibrary.org', '229-377-3632 ext. 112', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
@@ -209,11 +191,11 @@ INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phon
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	95, 87, 3, 'PMRLS-YPL', 'Yatesville Public Library', 'libraryy@pinemtnlibrary.org', '706-472-3048', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
-	96, 1, 2, 'MRLS', 'Mountain Regional Library', NULL, NULL, TRUE);
+	96, 1, 2, 'MRLS', 'Mountain Regional Library System', NULL, NULL, TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	97, 96, 3, 'MRLS-MRL', 'Mountain Regional Library', 'haymoret@mountainregionallibrary.org', '706-379-3732', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
-	98, 96, 3, 'MRLS-BKMB', 'Bookmobile', 'bookmobile@mountainregionallibrary.org', '706-781-7394 (cell)', TRUE);
+	98, 96, 3, 'MRLS-BKMB', 'MRLS Bookmobile', 'bookmobile@mountainregionallibrary.org', '706-781-7394 (cell)', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	99, 96, 3, 'MRLS-FCPL', 'Fannin County Public Library', 'fanninlibrary@mountainregionallibrary.org', '706-632-5263', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
@@ -283,7 +265,7 @@ INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phon
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	132, 131, 3, 'SRL-AMBR', 'Ambrose Public Library', 'ambrlib@srlsys.org', '912-359-2536', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
-	133, 131, 3, 'SRL-BKMO', 'Bookmobile', 'johnsonl@srlsys.org', '912-384-4667 ask for Lorrinda Johnson', TRUE);
+	133, 131, 3, 'SRL-BKMO', 'SRL Bookmobile', 'johnsonl@srlsys.org', '912-384-4667 ask for Lorrinda Johnson', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	134, 131, 3, 'SRL-BROX', 'Broxton Public Library', 'broxlib@srlsys.org', '912-359-3887', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
@@ -347,7 +329,7 @@ INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phon
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	164, 163, 3, 'WGRL-HQ', 'West Ga. Regional Library Hdqtrs.', 'hqreports@wgrl.net', '770-836-6711', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
-	165, 163, 3, 'WGRL-BKM', 'Bookmobile', 'extsers@wgrl.net', '770-836-6711', TRUE);
+	165, 163, 3, 'WGRL-BKM', 'WGRL Bookmobile', 'extsers@wgrl.net', '770-836-6711', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	166, 163, 3, 'WGRL-BO', 'Bowdon Public Library', 'barbara@wgrl.net', '770-258-8991', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
@@ -375,7 +357,7 @@ INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phon
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	178, 177, 3, 'SWGRL-DEC', 'Decatur County Public Library', 'ssudderth@swgrl.org', '229-248-2665', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
-	179, 177, 3, 'SWGRL-BKM', 'Bookmobile', 'tkarnes@swgrl.org', NULL, TRUE);
+	179, 177, 3, 'SWGRL-BKM', 'SWGRL Bookmobile', 'tkarnes@swgrl.org', NULL, TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	180, 177, 3, 'SWGRL-SEM', 'Seminole Public Library', 'jsmith@swgrl.org', '229-524-2665', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
@@ -407,7 +389,7 @@ INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phon
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	194, 184, 3, 'PIED-STA', 'Statham Public Library', 'statham_lib@yahoo.com', '770-725-4785', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
-	195, 184, 3, 'PIED-BKM', 'Bookmobile', 'kmckean@prlib.org', '770-867-2762', TRUE);
+	195, 184, 3, 'PIED-BKM', 'PIED Bookmobile', 'kmckean@prlib.org', '770-867-2762', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	196, 184, 3, 'PIED-BRL', 'Braselton Library', 'badkins@prlib.org', '706-654-1992', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
@@ -435,7 +417,7 @@ INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phon
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	208, 203, 3, 'OHOOP-TATG', 'Glennville / Tattnall County Library', 'ohotatg@ohoopeelibrary.org', '912-654-3812', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
-	209, 203, 3, 'OHOOP-BKML', 'Bookmobile', 'ohovidt@ohoopeelibrary.org', '912-537-9283', TRUE);
+	209, 203, 3, 'OHOOP-BKML', 'OHOOP Bookmobile', 'ohovidt@ohoopeelibrary.org', '912-537-9283', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	210, 203, 3, 'OHOOP-LADS', 'Ladson Genealogical Library', 'oholads@ohoopeelibrary.org', '912-537-9283', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
@@ -467,7 +449,7 @@ INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phon
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	224, 221, 3, 'BTRL-TCL', 'Taliaferro County Library', 'taliacl@btrl.net', '706-456-2531', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
-	225, 221, 3, 'BTRL-BKM', 'Bookmobile', 'bkmc@btrl-net', '706-678-7736', TRUE);
+	225, 221, 3, 'BTRL-BKM', 'BTRL Bookmobile', 'bkmc@btrl-net', '706-678-7736', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	226, 1, 2, 'JCL', 'Jefferson County Library', NULL, NULL, TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
@@ -477,7 +459,7 @@ INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phon
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	229, 226, 3, 'JCL-WADLEY', 'Wadley Public Library', 'wacirc@mail.jefferson.public.lib.ga.us', '478-252-1366', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
-	230, 226, 3, 'JCL-BKMOBL', 'Bookmobile', NULL, NULL, TRUE);
+	230, 226, 3, 'JCL-BKMOBL', 'JCL Bookmobile', NULL, NULL, TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	231, 1, 2, 'NCLS', 'Newton County Library System', NULL, NULL, TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
@@ -565,7 +547,7 @@ INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phon
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	273, 267, 3, 'CPRL-T', 'Tifton-Tift County Public Library', 'ttcpl@cprl.org', '229-386-7148', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
-	274, 267, 3, 'CPRL-BKM', 'Bookmobile', 'kgriffis@cprl.org', '229-386-3400', FALSE);
+	274, 267, 3, 'CPRL-BKM', 'CPRL Bookmobile', 'kgriffis@cprl.org', '229-386-3400', FALSE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	275, 1, 2, 'ECGR', 'East Central Georgia Regional Library', NULL, NULL, TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
@@ -685,7 +667,7 @@ INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phon
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	343, 252, 3, 'KRLS-QU', 'Quitman County Public Library', NULL, '229-334-8972', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
-	344, 1, 2, 'CCL', 'Catoosa County Library', NULL, NULL, TRUE);
+	344, 1, 2, 'CCL', 'Catoosa County Library System', NULL, NULL, TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	345, 344, 3, 'CCL-RING', 'Catoosa County Library', NULL, '706-965-3600', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
