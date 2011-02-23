@@ -6,14 +6,14 @@ COMMIT;
 -- edit 9 default ous to PINES values
 BEGIN;
 UPDATE actor.org_unit SET shortname = 'PINES', name = 'PINES' WHERE id = 1;
-UPDATE actor.org_unit SET parent_ou = 1, ou_type = 2, ill_address = NULL, holds_address = NULL, mailing_address = NULL, billing_address = NULL, shortname = 'MCCLS', name = 'Moultrie-Colquitt County Library System' WHERE id = 2;
-UPDATE actor.org_unit SET parent_ou = 2, ou_type = 3, ill_address = 2, holds_address = 2, mailing_address = 2, billing_address = 2, shortname = 'MCCLS-HQ', name = 'Moultrie-Colquitt County Library' WHERE id = 3;
-UPDATE actor.org_unit SET parent_ou = 2, ou_type = 3, ill_address = 3, holds_address = 3, mailing_address = 3, billing_address = 3, shortname = 'MCCLS-DOE', name = 'Doerun Municipal Library' WHERE id = 4;
-UPDATE actor.org_unit SET parent_ou = 2, ou_type = 3, ill_address = 4, holds_address = 4, mailing_address = 4, billing_address = 4, shortname = 'MCCLS-BKM', name = 'MCCLS Bookmobile' WHERE id = 5;
-UPDATE actor.org_unit SET parent_ou = 1, ou_type = 2, ill_address = NULL, holds_address = NULL, mailing_address = NULL, billing_address = NULL, shortname = 'ARL', name = 'Athens Regional Library System' WHERE id = 6;
-UPDATE actor.org_unit SET parent_ou = 6, ou_type = 3, ill_address = 5, holds_address = 5, mailing_address = 5, billing_address = 5, shortname = 'ARL-ATH', name = 'Athens-Clarke County Library' WHERE id = 7;
-UPDATE actor.org_unit SET parent_ou = 6, ou_type = 3, ill_address = 6, holds_address = 6, mailing_address = 6, billing_address = 6, shortname = 'ARL-WAT', name = 'Watkinsville/Oconee County Library' WHERE id = 8;
-UPDATE actor.org_unit SET parent_ou = 6, ou_type = 3, ill_address = 7, holds_address = 7, mailing_address = 7, billing_address = 7, shortname = 'ARL-BOG', name = 'Bogart Library' WHERE id = 9;
+UPDATE actor.org_unit SET parent_ou = 1, ou_type = 2, shortname = 'MCCLS', name = 'Moultrie-Colquitt County Library System' WHERE id = 2;
+UPDATE actor.org_unit SET parent_ou = 2, ou_type = 3, shortname = 'MCCLS-HQ', name = 'Moultrie-Colquitt County Library' WHERE id = 3;
+UPDATE actor.org_unit SET parent_ou = 2, ou_type = 3, shortname = 'MCCLS-DOE', name = 'Doerun Municipal Library' WHERE id = 4;
+UPDATE actor.org_unit SET parent_ou = 2, ou_type = 3, shortname = 'MCCLS-BKM', name = 'MCCLS Bookmobile' WHERE id = 5;
+UPDATE actor.org_unit SET parent_ou = 1, ou_type = 2, shortname = 'ARL', name = 'Athens Regional Library System' WHERE id = 6;
+UPDATE actor.org_unit SET parent_ou = 6, ou_type = 3, shortname = 'ARL-ATH', name = 'Athens-Clarke County Library' WHERE id = 7;
+UPDATE actor.org_unit SET parent_ou = 6, ou_type = 3, shortname = 'ARL-WAT', name = 'Watkinsville/Oconee County Library' WHERE id = 8;
+UPDATE actor.org_unit SET parent_ou = 6, ou_type = 3, shortname = 'ARL-BOG', name = 'Bogart Library' WHERE id = 9;
 COMMIT;
 
 -- insert PINES org_units 
@@ -187,7 +187,7 @@ INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phon
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	93, 87, 3, 'PMRLS-TCL', 'Talbot County Library', 'libraryt@pinemtnlibrary.org', '706-665-3134', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
-	94, 87, 3, 'PMRLS-EXT', 'Extension Services', 'bookmobe@pinemtnlibrary.org', '706-846-2186 Ext. 107', TRUE);
+	94, 87, 3, 'PMRLS-EXT', 'PMRLS Extension Services', 'bookmobe@pinemtnlibrary.org', '706-846-2186 Ext. 107', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	95, 87, 3, 'PMRLS-YPL', 'Yatesville Public Library', 'libraryy@pinemtnlibrary.org', '706-472-3048', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
@@ -503,7 +503,7 @@ INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phon
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	251, 233, 3, 'MGRL-RE', 'Regional Library', NULL, '478-744-0800', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
-	252, 1, 2, 'KRLS', 'Kinchafoonee Regional Library', NULL, NULL, TRUE);
+	252, 1, 2, 'KRLS', 'Kinchafoonee Regional Library System', NULL, NULL, TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	253, 252, 3, 'KRLS-AR', 'Arlington Branch Library', NULL, NULL, TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
@@ -593,7 +593,7 @@ INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phon
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	298, 292, 3, 'ORLS-WHE', 'Wheeler County Library', NULL, NULL, TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
-	299, 292, 3, 'ORLS-EXT', 'Extension Services', NULL, NULL, FALSE);
+	299, 292, 3, 'ORLS-EXT', 'ORLS Extension Services', NULL, NULL, FALSE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (
 	300, 140, 3, 'HCLS-FV', 'Fairview Branch', NULL, '770-389-6277', TRUE);
 INSERT INTO actor.org_unit (id, parent_ou, ou_type, shortname, name, email, phone, opac_visible) VALUES (

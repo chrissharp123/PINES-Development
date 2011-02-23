@@ -50,7 +50,7 @@ $SQL_DIR/pines-orgs.sql
 $SQL_DIR/pines-org-addresses.sql
 $SQL_DIR/update_addresses.sql
 $SQL_DIR/pines-circ.sql
-$SQL_DRI/EvergreenReportTemplates_1_6.sql";
+$SQL_DIR/EvergreenReportTemplates_1_6.sql";
 
 # ---------------------------------------------------------------------------
 # Import files via psql, warn user on error, suggest abort.

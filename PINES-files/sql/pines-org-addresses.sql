@@ -1,7 +1,5 @@
 BEGIN;
 INSERT INTO actor.org_address (id, valid, address_type, org_unit, street1, street2, city, county, state, country, post_code) VALUES (
-	1, TRUE, 'MAILING', 1, '123 Main St.', NULL, 'Anywhere', NULL, 'GA', 'US', '30303');
-INSERT INTO actor.org_address (id, valid, address_type, org_unit, street1, street2, city, county, state, country, post_code) VALUES (
 	2, TRUE, 'MAILING', 3, 'PO BOX 2828', NULL, 'MOULTRIE', NULL, 'GA', 'USA', '31776-2828');
 INSERT INTO actor.org_address (id, valid, address_type, org_unit, street1, street2, city, county, state, country, post_code) VALUES (
 	3, TRUE, 'MAILING', 4, 'PO BOX 158', NULL, 'DOERUN', NULL, 'GA', 'USA', '31744-0158');
