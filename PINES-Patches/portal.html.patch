@@ -1,0 +1,25 @@
+--- /openils/var/web/xul/server/index.html.orig	2011-03-24 08:28:47.000000000 -0400
++++ /openils/var/web/xul/server/index.html	2011-03-24 08:29:29.000000000 -0400
+@@ -417,13 +417,6 @@
+ <hr />
+ <table class="functionlist">
+ <tr>
+-<td height="50"> 
+-<img src="icons/helpdesk.png" height="48" width="48" onclick="try { helpdesk(false); } catch(E) { alert(E); }" alt="Submit A Helpdesk Ticket" /></td>
+-<td><img class="newtabimg" src="icons/newtab2.PNG" alt="Open in a new tab" onclick="try { helpdesk(true); } catch(E) { alert(E); }" />
+-<a href="#" onclick="try { helpdesk(false); } catch(E) { alert(E); }" >Submit A Helpdesk Ticket&nbsp;</a>
+-</td>
+-</tr>
+-<tr>
+ <td height="50">
+ <img src="icons/reports.png" height="48" width="48" onclick="try { local_admin_reports(false); } catch(E) { alert(E); }" alt="Reports" /></td>
+ <td><img class="newtabimg" src="icons/newtab2.PNG" alt="Open in a new tab" onclick="try { local_admin_reports(true); } catch(E) { alert(E); }" />
+@@ -441,7 +434,7 @@
+ </div>
+ </td>
+ </tr></table>
+-<div class="attribution" align="center">Copyright &copy; 2006-2010 Georgia Public Library
++<div class="attribution" align="center">Copyright &copy; 2006-2011 Georgia Public Library
+ Service<br />
+ Powered by 
+ 	<img src="eg_tiny_logo.jpg" alt="Evergreen logo" />
