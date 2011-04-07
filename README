@@ -1,7 +1,7 @@
 GPLS/PINES Evergreen ILS README
 ===============================
 
-This is the PINES-tailored version of Evergreen-ILS.  It is stock Evergreen-ILS-1.6.1.4,
+This project's goal is to create the PINES-tailored version of Evergreen-ILS.  It is stock Evergreen-ILS-1.6.1.X,
 with PINES' customizations in patch form, along with site-specific configuration files.  
 The relevant files are in the PINES-Patches and PINES-files directories.
 
@@ -16,3 +16,4 @@ NOTES to self:
 - tabbing order for horizontal display
 - bibtemplate entries for displayed fields
 - correct indexing of titles/subjects/authors
+- added content servers' apache configuration
