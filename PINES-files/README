@@ -1,0 +1,25 @@
+PINES-Development/PINES-files
+
+dashboard.zip - the Evergreen Indiana dashboard, which should be unzipped into the /openils/var/web/xul/server directory (this is then patched by PINES-Development/PINES-Patches/portal.html.patch )
+
+files.list - used by the pinesfy.sh script to walk through each file
+
+openils/conf/lib_ips.txt - to be copied into /openils/conf to enable IP redirection for library OPACs per org_unit
+
+openils/var/data/zips.txt - to be copied into /openils/var/data to enable the ZIP code based autocompletion of city/county/state when registering a user
+
+openils/var/web/opac/images - the PINES logos, to be copied into /openils/var/web/opac/images
+
+**NOTE: SQL scripts are have had less testing than the files and patches have - use at your own risk!***
+
+sql/EvergreenReportTemplates_1_6.sql - the ESI-provided "canned reports" - as-is - no edits
+
+sql/pines-circ.sql - PINES circulation rules, pulled from the legacy scripts
+
+sql/pines-org-addresses.sql - adds the PINES org unit addresses -requires that pines-orgs.sql be run first
+
+sql/pines-orgs.sql - edits the default org_units and adds the remaining PINES org_units
+
+pines_courier_codes.sql - adds the PINES courier codes to the library settings for each org_unit, based on legacy script entries
+
+update_addresses.sql - adds the PINES addresses to the org units added in sql/pines-orgs.sql - to be run after sql/pines-org-addresses.sql
