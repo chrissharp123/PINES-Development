@@ -22,6 +22,8 @@ rdetail.js.patch - removes Google Books preview from detailed display
 
 result_common.js.patch - removes Google Books link from search results
 
+search_form_horiz_overlay.xul.patch - arranges the elements of the Patron Search interface so that the user tabs through in a logical order.
+
 start.html.patch - applies PINES colors to the slimpac
 
 startup.pl.patch - enables the lib_ips.txt file for OPAC redirection per org unit
