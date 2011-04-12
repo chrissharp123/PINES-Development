@@ -1,0 +1,30 @@
+PINES-Development/PINES-Patches:
+
+advanced.html.patch - edits the colors in the CSS script in the header of the advanced search screen
+
+colors.css.patch - defines the PINES color scheme where not otherwise defined
+
+eg_vhost.patch - makes the "default" skin the default skin rather than craftsman
+
+footer.xml.patch - adds the IE8 link to the footer
+
+homesearch.xml.patch - adds a link for the large logo and removes some of the borders on the home page.
+
+logo.xml.patch - removes the height and width specifications for the small logo - this stretches the PINES logo, which we don't want
+
+opac.dtd.patch - points the Help footer link to the PINES Catalog Help site; adds the URL and text for the IE8 footer link; updates the copyright statement to 2011; changes home page title to "Georgia PINES Catalog"
+
+opensrf.xml.patch - removes non-OCLC Z39.50 sources; enables the /openils/var/data/zips.txt file for automatic city/state completion when registering patrons
+
+portal.html.patch - requires the installation of the Evergreen Indiana dashboard in PINES-Development/PINES-files - removes the helpdesk link and updates the copyright statement.
+
+rdetail.js.patch - removes Google Books preview from detailed display
+
+result_common.js.patch - removes Google Books link from search results
+
+start.html.patch - applies PINES colors to the slimpac
+
+startup.pl.patch - enables the lib_ips.txt file for OPAC redirection per org unit
+
+ue_config.js.patch - makes DOB a required field for registering patrons
+

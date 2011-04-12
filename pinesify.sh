@@ -22,6 +22,9 @@ PGDATABASE='evergreen'
 PGUSER='evergreen'
 PGPASSWORD='evergreen'
 
+# install unzip just in case it is not present
+apt-get -y install unzip
+
 # copy the PINES files into place
 MoveFiles () { 
 cd $FILES_DIR
@@ -32,6 +35,13 @@ then
 fi
 cp "$FILES_DIR/$file" "$file";
 done
+}
+
+# create the dashboard and patch it
+DashBoard () {
+cd /openils/var/web/xul/server
+unzip $FILES_DIR/dashboard.zip
+patch -p0 < $PATCH_DIR/portal.html.patch
 }
 
 # patch the files
@@ -83,7 +93,8 @@ done
 
 MoveFiles
 PatchFiles
-SQLFiles
+#SQLFiles
+DashBoard
 
 # restart apache
 /etc/init.d/apache2 restart
