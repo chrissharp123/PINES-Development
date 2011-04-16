@@ -47,7 +47,7 @@ patch -p0 < $PATCH_DIR/portal.html.patch
 # patch the files
 PatchFiles () {
 cd $PATCH_DIR
-for patch in `ls $PATCH_DIR`; do
+for patch in `cat patches.list`; do
 patch -p0 < $patch;
 done
 }
@@ -93,7 +93,7 @@ done
 
 MoveFiles
 PatchFiles
-#SQLFiles
+SQLFiles
 DashBoard
 
 # restart apache
