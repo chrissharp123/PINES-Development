@@ -22,5 +22,7 @@ Post upgrade:
 - lib_ips.txt didn't work - from leed:
 11:42 < leed> RedirectMatch 301 ^/$ /opac/en-US/skin/default/xml/index.xml
 11:42 < leed> was interfering from the stock eg_vhost.conf
-- Evergreen Indiana portal images were not loading correctly  - Steve fixed
+- Evergreen Indiana portal images were not loading correctly  - Steve fixed - images were not copied over to all servers.
 - Offline upload was not working - required a patch from Steve.
+- printers not working
+- CREATE_PAYMENT perm blocking payment at any library other than the circ lib
