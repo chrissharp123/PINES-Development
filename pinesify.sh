@@ -9,6 +9,8 @@
 #
 # ============================================================================
 
+# Revising this script for Evergreen 2.0.6
+
 # make sure we are root
 [ $(whoami) != 'root' ] && echo 'Must run as root or with sudo' && exit;
 
