@@ -1,7 +1,6 @@
---- /openils/conf/opensrf.xml.2011.2.18.12.33.27	2011-02-18 12:33:27.000000000 -0500
-+++ /openils/conf/opensrf.xml	2011-02-18 13:56:41.000000000 -0500
-
-@@ -145,60 +143,8 @@
+--- /openils/conf/opensrf.xml.orig	2011-05-09 14:58:19.000000000 -0400
++++ /openils/conf/opensrf.xml	2011-05-09 15:40:08.000000000 -0400
+@@ -194,61 +194,9 @@
  
  
          <z3950>
@@ -10,7 +9,7 @@
              <services>
 -                <biblios>
 -                    <!-- biblios does not require username/password -->
--                    <name>‡biblios.net</name>
+-                    <name>&#x2021;biblios.net</name>
 -                    <host>z3950.biblios.net</host>
 -                    <port>210</port>
 -                    <db>bibliographic</db>
@@ -60,11 +59,12 @@
 -                    </attrs>
 -                </loc>
 -
-                 <oclc>
+-                <oclc>
++               <oclc>
                      <!-- Z3950 settings for OCLC.  Note that OCLC requires username/password -->
                      <host>zcat.oclc.org</host>
-
-@@ -408,7 +354,7 @@
+                     <port>210</port>
+@@ -495,7 +443,7 @@
                      <max_superpages>10</max_superpages>
  
                      <!-- zip code database file -->
@@ -72,3 +72,4 @@
 +                    <zips_file>/openils/var/data/zips.txt</zips_file>
                  </app_settings>
              </open-ils.search>
+ 
