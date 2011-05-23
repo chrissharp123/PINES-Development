@@ -1,6 +1,7 @@
 --- offline.pl.041411   2011-04-14 16:00:40.000000000 -0400
-+++ offline.pl  2011-04-14 16:02:53.000000000 -0400
++++ /openils/var/cgi-bin/offline/offline.pl  2011-04-14 16:02:53.000000000 -0400
 @@ -338,8 +338,14 @@
+
 $resfile = "$basedir/archive/$org/$seskey/results";
 }
 my $data = ol_file_to_perl($resfile);
