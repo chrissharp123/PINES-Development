@@ -27,3 +27,8 @@ Post upgrade:
 - printers not working
 - CREATE_PAYMENT perm blocking payment at any library other than the circ lib
 - http://svn.open-ils.org/trac/ILS/changeset/20109 and http://svn.open-ils.org/trac/ILS/changeset/20143 applied for cataloger printing spine/pocket labels.
+- symlink for rel_1_6_1_2 added to accommodate SITKA-packaged Mac client
+- renewals on hold-requested items were not working because of setting in Library Settings Editor fighting with same setting in circ scripts
+- zips.txt was not working - needed to be enabled in opensrf.xml
+- had to increase the group ID current val in the database - it was set too low
+
