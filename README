@@ -26,3 +26,4 @@ Post upgrade:
 - Offline upload was not working - required a patch from Steve.
 - printers not working
 - CREATE_PAYMENT perm blocking payment at any library other than the circ lib
+- http://svn.open-ils.org/trac/ILS/changeset/20109 and http://svn.open-ils.org/trac/ILS/changeset/20143 applied for cataloger printing spine/pocket labels.
