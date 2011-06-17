@@ -12,8 +12,8 @@
  <!ENTITY footer.union.url "http://www.galileo.usg.edu/">
  <!ENTITY footer.union "GALILEO">
 -<!ENTITY footer.copyright "Copyright &#xA9; 2006-2010 Georgia Public Library Service, and others">
-+<!ENTITY footer.IE8.url "http://pines.georgialibraries.org/catalog-help#IE8">
-+<!ENTITY footer.IE8 "Internet Explorer 8 Issues">
++<!ENTITY footer.IE8.url "http://pines.georgialibraries.org/how-clear-you-browser-cache">
++<!ENTITY footer.IE8 "Internet Browser Issues">
 +<!ENTITY footer.copyright "Copyright &#xA9; 2006-2011 Georgia Public Library Service, and others">
  <!ENTITY footer.logo "Powered by"> <!-- Introduces the logo for the project -->
  
