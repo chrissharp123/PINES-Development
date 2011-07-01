@@ -1,0 +1,34 @@
+--- /openils/var/data/templates/overdue_combined_xml.2011-06-23 2011-06-23 09:02:48.000000000 -0400
++++ /openils/var/data/templates/overdue_combined_xml    2011-06-23 10:10:55.000000000 -0400
+@@ -12,18 +12,29 @@
+
+         [%- IF !lib_addr -%]
+                 [%- SET lib_addr = lib.billing_address -%]
+         [%- END -%]
+-        [%- IF !user_addr or user_addr.valid == 'f'; NEXT; END; %]
+     <notice type='overdue' notify_interval='[% circ_set.notice.notify_interval %]'>
+         <patron>
+             <barcode>[% user.card.barcode %]</barcode>
+             <first_given_name>[% user.first_given_name %]</first_given_name>
+             <family_name>[% user.family_name %]</family_name>
++           [% IF !user_addr %]
++               <addr_valid>false</addr_valid>
++        [% ELSE %]
++               [% IF user_addr.valid == 'f' %]
++                <addr_valid>false</addr_valid>
++            [% ELSE %]
++                <addr_valid>true</addr_valid>
++            [% END %]
+             <addr_street1>[% escape_xml(user_addr.street1) %]</addr_street1>
+             <addr_street2>[% escape_xml(user_addr.street2) %]</addr_street2>
+             <addr_city>[% escape_xml(user_addr.city) %]</addr_city>
+             <addr_state>[% user_addr.state %]</addr_state>
+             <addr_post_code>[% user_addr.post_code %]</addr_post_code>
++        [% END %]
+             <email>[% user.email %]</email>
++            <day_phone>[% user.day_phone %]</day_phone>
++            <evening_phone>[% user.evening_phone %]</evening_phone>
++            <other_phone>[% user.other_phone %]</other_phone>
+             <sys_id>[% user.id %]</sys_id>
+         </patron>
+         <location>
