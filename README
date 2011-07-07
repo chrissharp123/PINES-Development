@@ -31,4 +31,6 @@ Post upgrade:
 - renewals on hold-requested items were not working because of setting in Library Settings Editor fighting with same setting in circ scripts
 - zips.txt was not working - needed to be enabled in opensrf.xml
 - had to increase the group ID current val in the database - it was set too low
+- upgraded MARC::Charset to address issue with Z39.50 and diacritics
+- upgraded Spreadsheet::WriteExcel to address issue with reports Excel and MS Office 2010
 
