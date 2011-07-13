@@ -21,7 +21,7 @@ EG_SRC_DIR="$WORK_DIR/$EG_VERSION"
 # the make target for the standalone database server
 TARGET="install_pgsql_server_debs_84"
 # the server that holds our snapshot
-ARCHIVE_HOST="vmfarm.pls-hq.org"
+ARCHIVE_HOST="example-host.org"
 ARCHIVE_USR="root"
 ARCHIVE_DIR="/mnt/pinesdata/"
 ARCHIVE_SNAPSHOT_DIR="$ARCHIVE_DIR/snapshot"
