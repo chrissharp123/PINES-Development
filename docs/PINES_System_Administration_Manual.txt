@@ -1,0 +1,72 @@
+PINES System Administration Manual
+==================================
+Chris Sharp <csharp@georgialibraries.org>
+v0.1, August 2011
+:doctype: book
+
+[preface]
+PINES System Administration
+---------------------------
+
+PINES History
+~~~~~~~~~~~~~
+The Georgia PINES Library program began in 1999 as a Y2K initiative for Georgia public libraries who did not have the resources to replace their non-Y2K-compliant library automation systems.  It evolved into an opportunity to create a statewide public library system where a patron could check out books all across the state with a single library card.
+
+Evergreen
+~~~~~~~~~
+Evergreen was developed by GPLS specifically for the PINES Program.
+
+The PINES Hardware Environment
+------------------------------
+
+[[LegacySetup]]
+Legacy Setup
+~~~~~~~~~~~~
+The original Evergreen developers designed the PINES cluster to be robust, which means that there is a great deal of load balancing, failover, and redundancy at nearly all levels.
+
+[[LVS]]
+Linux Virtual Server (LVS) Servers
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+PINES employs the Linux Virtual Server (http://www.linuxvirtualserver.org/) to receive and redirect all HTTP/HTTPS traffic from the web to the application bricks. 
+
+[[AppBricks]]
+Application "Bricks"
+~~~~~~~~~~~~~~~~~~~~
+The application layer is managed by server "bricks".  A brick consists of a head server, which runs Apache, and 2 or more drone servers that run the OpenSRF processes.  In PINES, the connection between the head and the drones is established via the Network File Server (NFS) program.
+
+[[DBs]]
+Database Servers
+~~~~~~~~~~~~~~~~
+PINES uses four servers running PostgreSQL.
+
+[[Memcache]]
+Memcache Servers
+~~~~~~~~~~~~~~~~
+Memcache is centrally managed on two redundant servers.
+
+[[Content]]
+Added Content Servers
+~~~~~~~~~~~~~~~~~~~~~
+Added content was managed separately pre-1.6 (April 2011).
+
+[[SIP]]
+SIP2 Servers
+~~~~~~~~~~~~
+The SIP2 servers provide an interface for third-party circulation and computer management products.
+
+[[Utility]]
+The Utility Server
+~~~~~~~~~~~~~~~~~~
+The utility server provides a number of auxiliary functions that are necessary to the system.
+
+[[Logger]]
+Logger Servers
+~~~~~~~~~~~~~~
+The logger servers record all of the system's activity and may be used to track down system problems or to track user activity.
+
+Providing System Access to Vendors and Other Third Parties
+----------------------------------------------------------
+
+
+
+// vim: set syntax=asciidoc;
