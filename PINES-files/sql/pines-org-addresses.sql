@@ -7,7 +7,7 @@ UPDATE actor.org_address SET valid = TRUE, address_type = 'MAILING', org_unit = 
 UPDATE actor.org_address SET valid = TRUE, address_type = 'MAILING', org_unit = 8, street1 = 'PO BOX 837', street2 = NULL, city ='WATKINSVILLE', county = NULL, state = 'GA', country = 'USA', post_code = '30677-0019' WHERE id = 6; 
 UPDATE actor.org_address SET valid = TRUE, address_type = 'MAILING', org_unit = 9, street1 = 'PO BOX 218', street2 = NULL, city = 'BOGART', county = NULL, state = 'GA', country = 'USA', post_code = '30622-0218' WHERE id = 7;
 UPDATE actor.org_address SET valid = TRUE, address_type = 'MAILING', org_unit = 10, street1 = 'PO BOX 100', street2 = NULL, city = 'LEXINGTON', county = NULL, state = 'GA', country = 'USA', post_code = '30648-0100' WHERE id = 8;
-UPDATE actor.org_address SET valid = TRUE, address_type = 'MAILING', org_unit = 11, street1 = 'PO BOX 38', street2 = NULL, city, county = NULL, state = 'GA', country = 'USA', post_code = '30633-0038' WHERE id = 9;
+UPDATE actor.org_address SET valid = TRUE, address_type = 'MAILING', org_unit = 11, street1 = 'PO BOX 38', street2 = NULL, city = 'DANIELSVILLE', county = NULL, state = 'GA', country = 'USA', post_code = '30633-0038' WHERE id = 9;
 COMMIT;
 
 -- Then insert the others...
