@@ -1,5 +1,4 @@
-advanced.html.patch
-circ_item_config.patch
+circ_item_config.js.patch
 colors.css.patch
 footer.xml.patch
 homesearch.xml.patch
