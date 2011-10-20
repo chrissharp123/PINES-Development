@@ -1,4 +1,15 @@
+/home/opensrf/survey-down.sh
+/home/opensrf/survey-up.sh
 /openils/conf/lib_ips.txt
+/openils/var/circ/circ_duration.js
+/openils/var/circ/circ_groups.js
+/openils/var/circ/circ_item_config.js
+/openils/var/circ/circ_lib.js
+/openils/var/circ/circ_permit_copy.js
+/openils/var/circ/circ_permit_hold.js
+/openils/var/circ/circ_permit_patron.js
+/openils/var/circ/circ_permit_renew.js
 /openils/var/data/zips.txt
 /openils/var/web/opac/images/small_logo.jpg
 /openils/var/web/opac/images/main_logo.jpg
+/openils/var/web/opac/skin/default/xml/home/homesearch.xml.survey

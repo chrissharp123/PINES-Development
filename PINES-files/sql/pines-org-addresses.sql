@@ -1,20 +1,17 @@
+-- Update the existing example addresses first
 BEGIN;
-INSERT INTO actor.org_address (id, valid, address_type, org_unit, street1, street2, city, county, state, country, post_code) VALUES (
-	2, TRUE, 'MAILING', 3, 'PO BOX 2828', NULL, 'MOULTRIE', NULL, 'GA', 'USA', '31776-2828');
-INSERT INTO actor.org_address (id, valid, address_type, org_unit, street1, street2, city, county, state, country, post_code) VALUES (
-	3, TRUE, 'MAILING', 4, 'PO BOX 158', NULL, 'DOERUN', NULL, 'GA', 'USA', '31744-0158');
-INSERT INTO actor.org_address (id, valid, address_type, org_unit, street1, street2, city, county, state, country, post_code) VALUES (
-	4, TRUE, 'MAILING', 5, 'PO BOX 2828', NULL, 'MOULTRIE', NULL, 'GA', 'USA', '31776-2828');
-INSERT INTO actor.org_address (id, valid, address_type, org_unit, street1, street2, city, county, state, country, post_code) VALUES (
-	5, TRUE, 'MAILING', 7, '2025 BAXTER ST', NULL, 'ATHENS', NULL, 'GA', 'USA', '30606-6331');
-INSERT INTO actor.org_address (id, valid, address_type, org_unit, street1, street2, city, county, state, country, post_code) VALUES (
-	6, TRUE, 'MAILING', 8, 'PO BOX 837', NULL, 'WATKINSVILLE', NULL, 'GA', 'USA', '30677-0019');
-INSERT INTO actor.org_address (id, valid, address_type, org_unit, street1, street2, city, county, state, country, post_code) VALUES (
-	7, TRUE, 'MAILING', 9, 'PO BOX 218', NULL, 'BOGART', NULL, 'GA', 'USA', '30622-0218');
-INSERT INTO actor.org_address (id, valid, address_type, org_unit, street1, street2, city, county, state, country, post_code) VALUES (
-	8, TRUE, 'MAILING', 10, 'PO BOX 100', NULL, 'LEXINGTON', NULL, 'GA', 'USA', '30648-0100');
-INSERT INTO actor.org_address (id, valid, address_type, org_unit, street1, street2, city, county, state, country, post_code) VALUES (
-	9, TRUE, 'MAILING', 11, 'PO BOX 38', NULL, 'DANIELSVILLE', NULL, 'GA', 'USA', '30633-0038');
+UPDATE actor.org_address SET valid = TRUE, address_type = 'MAILING', org_unit = 3, street1 = 'PO BOX 2828', street2 = NULL, city = 'MOULTRIE', county = NULL, state = 'GA', country = 'USA', post_code= '31776-2828' WHERE id = 2;
+UPDATE actor.org_address SET valid = TRUE, address_type = 'MAILING', org_unit = 4, street1 = 'PO BOX 158', street2 = NULL, city = 'DOERUN', county = NULL, state = 'GA', country = 'USA', post_code WHERE id = 3; 
+UPDATE actor.org_address SET valid = TRUE, address_type = 'MAILING', org_unit = 5, street1 = 'PO BOX 2828', street2 = NULL, city = 'MOULTRIE', county = NULL, state = 'GA', country = 'USA', post_code = '31776-2828' WHERE id = 4; 
+UPDATE actor.org_address SET valid = TRUE, address_type = 'MAILING', org_unit = 7, street1 = '2025 BAXTER ST', street2 = NULL, city = 'ATHENS', county = NULL, state = 'GA', country = 'USA', post_code = '30606-6331' WHERE id = 5; 
+UPDATE actor.org_address SET valid = TRUE, address_type = 'MAILING', org_unit = 8, street1 = 'PO BOX 837', street2 = NULL, city ='WATKINSVILLE', county = NULL, state = 'GA', country = 'USA', post_code = '30677-0019' WHERE id = 6; 
+UPDATE actor.org_address SET valid = TRUE, address_type = 'MAILING', org_unit = 9, street1 = 'PO BOX 218', street2 = NULL, city = 'BOGART', county = NULL, state = 'GA', country = 'USA', post_code = '30622-0218' WHERE id = 7;
+UPDATE actor.org_address SET valid = TRUE, address_type = 'MAILING', org_unit = 10, street1 = 'PO BOX 100', street2 = NULL, city = 'LEXINGTON', county = NULL, state = 'GA', country = 'USA', post_code = '30648-0100' WHERE id = 8;
+UPDATE actor.org_address SET valid = TRUE, address_type = 'MAILING', org_unit = 11, street1 = 'PO BOX 38', street2 = NULL, city = 'DANIELSVILLE', county = NULL, state = 'GA', country = 'USA', post_code = '30633-0038' WHERE id = 9;
+COMMIT;
+
+-- Then insert the others...
+BEGIN;
 INSERT INTO actor.org_address (id, valid, address_type, org_unit, street1, street2, city, county, state, country, post_code) VALUES (
 	10, TRUE, 'MAILING', 12, 'PO BOX 89', NULL, 'WINTERVILLE', NULL, 'GA', 'USA', '30683-0089');
 INSERT INTO actor.org_address (id, valid, address_type, org_unit, street1, street2, city, county, state, country, post_code) VALUES (

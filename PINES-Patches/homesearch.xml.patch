@@ -1,14 +1,5 @@
 --- Evergreen-ILS-1.4.0.7/Open-ILS/web/opac/skin/default/xml/home/homesearch.xml	2008-10-03 14:52:40.000000000 -0400
 +++ /openils/var/web/opac/skin/default/xml/home/homesearch.xml	2011-01-26 06:39:41.000000000 -0500
-@@ -28,7 +28,7 @@
- 
- 
- 	<div style='width: 100%; text-align: center'>
--		<img src='<!--#echo var="OILS_BASE"-->/images/main_logo.jpg' />
-+		<a title="10 Years of PINES" href="http://pines.georgialibraries.org/10-years-pines" target="_blank"><img src='<!--#echo var="OILS_BASE"-->/images/main_logo.jpg' /></a>
- 	</div>
- 
- 	<style>.rowpad { height: 20px; }</style>
 @@ -53,8 +53,8 @@
  
  			<tr class='rowpad'><td></td></tr>

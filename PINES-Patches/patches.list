@@ -1,15 +1,12 @@
-advanced.html.patch
+circ_item_config.js.patch
 colors.css.patch
-eg_vhost.patch
 footer.xml.patch
 homesearch.xml.patch
 logo.xml.patch
-offline.pl.patch
 opac.dtd.patch
 opensrf.xml.patch
 rdetail.js.patch
 result_common.js.patch
-search_form_horiz_overlay.xul.patch
 start.html.patch
 startup.pl.patch
 ue_config.js.patch

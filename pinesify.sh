@@ -16,14 +16,13 @@ BASE_DIR=$PWD
 FILES_DIR=$BASE_DIR/PINES-files
 PATCH_DIR=$BASE_DIR/PINES-Patches
 SQL_DIR=$FILES_DIR/sql
+# change the following to suit your setup:
 PGHOST='localhost'
 PGPORT='5432'
 PGDATABASE='evergreen'
 PGUSER='evergreen'
 PGPASSWORD='evergreen'
 
-# install unzip just in case it is not present
-apt-get -y install unzip
 
 # copy the PINES files into place
 MoveFiles () { 
@@ -39,6 +38,8 @@ done
 
 # create the dashboard and patch it
 DashBoard () {
+# install unzip in case it's not present
+apt-get -y install unzip
 cd /openils/var/web/xul/server
 unzip $FILES_DIR/dashboard.zip
 patch -p0 < $PATCH_DIR/portal.html.patch
@@ -48,7 +49,10 @@ patch -p0 < $PATCH_DIR/portal.html.patch
 PatchFiles () {
 cd $PATCH_DIR
 for patch in `cat patches.list`; do
-patch -p0 < $patch;
+patch -p0 < $patch || {
+	echo "ERROR: $patch did not apply correctly"
+	exit 1
+};
 done
 }
 
@@ -94,7 +98,7 @@ done
 MoveFiles
 PatchFiles
 SQLFiles
-DashBoard
+#DashBoard - default in 2.1
 
 # restart apache
 /etc/init.d/apache2 restart
