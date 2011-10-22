@@ -1,0 +1,11 @@
+Pre-Upgrade 1.6.1 to 2.1 Tasks
+------------------------------
+These are the steps required of us to upgrade PINES from Evergreen 1.6.1.8 to Evergreen 2.1.0.  These are focused almost entirely on the database upgrade, which requires a new version of PostgreSQL.
+
+.Summary of full process
+. Do some database cleanup and backups.
+. Export the database using the pg_dump utility.
+. Import the database into PostgreSQL 9.1.
+. Run the modified 1.6.1-2.0-upgrade-script.
+. Run the (possibly modified) 2.0-2.1-upgrade-script.
+. Do some post-upgrade cleanup.
