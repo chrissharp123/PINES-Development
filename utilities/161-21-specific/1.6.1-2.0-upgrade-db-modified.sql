@@ -17468,7 +17468,8 @@ ALTER TABLE serial.unit
 -- Now rebuild the constraints dropped via cascade.
 -- ALTER TABLE acq.provider    ADD CONSTRAINT provider_edi_default_fkey FOREIGN KEY (edi_default) REFERENCES acq.edi_account (id) DEFERRABLE INITIALLY DEFERRED;
 DROP INDEX IF EXISTS money.money_mat_summary_id_idx;
-ALTER TABLE money.materialized_billable_xact_summary ADD PRIMARY KEY (id);
+-- this table already has a primary key in PINES:
+-- ALTER TABLE money.materialized_billable_xact_summary ADD PRIMARY KEY (id);
 
 -- ALTER TABLE staging.billing_address_stage ADD PRIMARY KEY (row_id);
 
