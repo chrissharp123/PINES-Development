@@ -9,15 +9,16 @@
 
 -- Then find the duplicates like so to get an idea of how much
 -- pain you're looking at to clean things up:
---SELECT id, authority.normalize_heading(marc)
---    FROM authority.record_entry
---    WHERE authority.normalize_heading(marc) IN (
---        SELECT authority.normalize_heading(marc)
---        FROM authority.record_entry
---        GROUP BY authority.normalize_heading(marc)
---        HAVING COUNT(*) > 1
---    )
---;
+SELECT authority.normalize_heading(marc), id
+    FROM authority.record_entry
+    WHERE authority.normalize_heading(marc) IN (
+        SELECT authority.normalize_heading(marc)
+        FROM authority.record_entry
+        GROUP BY authority.normalize_heading(marc)
+        HAVING COUNT(*) > 1
+    )
+ORDER BY 1
+;
 
 -- Once you have removed the duplicates and the CREATE UNIQUE INDEX
 -- statement succeeds, drop the temporary index to avoid unnecessary
