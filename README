@@ -1,6 +1,8 @@
 GPLS/PINES Evergreen ILS README
 ===============================
 
+***NOTICE: The PINES Development Team has now moved its project to http://git.evergreen-ils.org/?p=evergreen/pines.git;a=summary ***
+
 This project's goal is to create the PINES-tailored version of Evergreen-ILS.  It is stock Evergreen-ILS-1.6.1.X,
 with PINES' customizations in patch form, along with site-specific configuration files.  
 The relevant files are in the PINES-Patches and PINES-files directories.
